@@ -5,7 +5,7 @@ class Solution:
             we also look back to check 
             if current element's complement already exists in the table
 
-            Input: an array of integers
+            Input: an array of integers, a target number
             Output: One unique list of indicies of two numbers such that their summation is equal to the target
             
             ** Notice: Assume that the result will be unique,
