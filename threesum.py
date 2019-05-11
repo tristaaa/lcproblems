@@ -1,5 +1,5 @@
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums):
     """
         Using the solution for two sum to solve three sum.
         To save time, first sort the input array, 
@@ -9,6 +9,7 @@ class Solution:
 
         Input: an array of n integers
         Output: all unique triples(a,b,c) where a+b+c=0
+        :rtype: List[List[int]]
     """
         ret=set()
         nums.sort()
