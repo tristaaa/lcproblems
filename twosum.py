@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target):
         """ Solution: One-pass Hash Table,
             While we iterate and inserting elements into the table, 
             we also look back to check 
