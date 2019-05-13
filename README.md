@@ -5,6 +5,8 @@
 &ensp;&ensp;[- Three Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-three-sum)<br>
 &ensp;&ensp;[- Four Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-four-sum)<br>
 
+[| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
+&ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
 ---
 
 ## | Sum problems
@@ -36,18 +38,21 @@
  - [twosumII](https://github.com/tristaaa/lcproblems/blob/master/twosumii.py)
 
 #### -two sum - input is a binary search tree
- - Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
- - The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
- - Note: 
-  - Your returned answers (both index1 and index2) are not zero-based.
-  - You may assume that each input would have exactly one solution and you may not use the same element twice.
+ - Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
  -  **Example:**
     ```python
-    Input: numbers = [2,7,11,15], target = 9
-    Output: [1,2]
-    Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
+    Input: 
+        5
+       / \
+      3   6
+     / \   \
+    2   4   7
+
+    Target = 9
+
+    Output: True
     ```
- - [twosumIV](https://github.com/tristaaa/lcproblems/blob/master/twosumii.py)
+ - [twosumIV](https://github.com/tristaaa/lcproblems/blob/master/twosumiv.py)
 
 
 
@@ -106,6 +111,37 @@
     2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
     ```
  - [foursumcount](https://github.com/tristaaa/lcproblems/blob/master/foursumcount.py)
+
+
+## | Stack problems
+### 2.1 Binary Search Tree Iterator
+ - Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+ - Calling `next()` will return the next smallest number in the BST.
+ - Note: 
+  - `next()` and `hasNext()` should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
+  - You may assume that `next()` call will always be valid, that is, there will be at least a next smallest number in the BST when `next()` is called.
+ - **Example:**
+    ```python
+    Input: 
+        7
+       / \
+      3   15
+         /  \
+        9   20
+
+    BSTIterator iterator = new BSTIterator(root);
+    iterator.next();    // return 3
+    iterator.next();    // return 7
+    iterator.hasNext(); // return true
+    iterator.next();    // return 9
+    iterator.hasNext(); // return true
+    iterator.next();    // return 15
+    iterator.hasNext(); // return true
+    iterator.next();    // return 20
+    iterator.hasNext(); // return false
+    ```
+ - [bstIterator](https://github.com/tristaaa/lcproblems/blob/master/bstiter.py)
+
 
 
 
