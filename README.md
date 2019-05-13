@@ -75,6 +75,7 @@
 
 
 ### 1.2 Three Sum
+#### -basic
  - Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? 
  - Find all unique triplets in the array which gives the sum of zero.
  - Note: The solution set must not contain duplicate triplets.
@@ -88,7 +89,21 @@
       [-1, -1, 2]
     ]
     ```
- - [threesum](https://github.com/tristaaa/lcproblems/blob/master/threesum.py)
+ - [3sum](https://github.com/tristaaa/lcproblems/blob/master/threesum.py)
+
+
+#### -three sum closest
+ - Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. 
+ - Return the sum of the three integers. You may assume that each input would have exactly one solution.
+ - **Example:**
+    ```python
+    Given array nums = [-1, 2, 1, -4], and target = 1.
+
+    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+    ```
+ - [3sumClosest](https://github.com/tristaaa/lcproblems/blob/master/threesumclosest.py)
+
+
 
 ### 1.3 Four Sum
 #### -basic
@@ -106,7 +121,7 @@
       [-2,  0, 0, 2]
     ]
     ```
- - [foursum](https://github.com/tristaaa/lcproblems/blob/master/foursum.py)
+ - [4sum](https://github.com/tristaaa/lcproblems/blob/master/foursum.py)
     - a general solution for all numbers of N sum using two pointers
 
 
@@ -129,7 +144,7 @@
     1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
     2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
     ```
- - [foursumcount](https://github.com/tristaaa/lcproblems/blob/master/foursumcount.py)
+ - [4sumCount](https://github.com/tristaaa/lcproblems/blob/master/foursumcount.py)
 
 
 ## | Stack problems
