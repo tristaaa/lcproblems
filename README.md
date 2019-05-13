@@ -4,7 +4,6 @@
 &ensp;&ensp;[- Two Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-two-sum)<br>
 &ensp;&ensp;[- Three Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-three-sum)<br>
 &ensp;&ensp;[- Four Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-four-sum)<br>
-
 [| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
 &ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
 ---
@@ -130,15 +129,15 @@
         9   20
 
     BSTIterator iterator = new BSTIterator(root);
-    iterator.next();    // return 3
-    iterator.next();    // return 7
-    iterator.hasNext(); // return true
-    iterator.next();    // return 9
-    iterator.hasNext(); // return true
-    iterator.next();    // return 15
-    iterator.hasNext(); // return true
-    iterator.next();    // return 20
-    iterator.hasNext(); // return false
+    iterator.next();    # return 3
+    iterator.next();    # return 7
+    iterator.hasNext(); # return true
+    iterator.next();    # return 9
+    iterator.hasNext(); # return true
+    iterator.next();    # return 15
+    iterator.hasNext(); # return true
+    iterator.next();    # return 20
+    iterator.hasNext(); # return false
     ```
  - [bstIterator](https://github.com/tristaaa/lcproblems/blob/master/bstiter.py)
 
