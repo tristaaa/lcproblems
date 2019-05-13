@@ -24,6 +24,7 @@
     ```
  - [twosum](https://github.com/tristaaa/lcproblems/blob/master/twosum.py)
 
+
 #### -two sum - input array sorted
  - Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
  - The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
@@ -37,6 +38,22 @@
     Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
     ```
  - [twosumII](https://github.com/tristaaa/lcproblems/blob/master/twosumii.py)
+
+
+#### -two sum - design a data structure
+ - Design and implement a TwoSum class. It should support the following operations: `add` and `find`.
+ - `add`: Add the number to an internal data structure.
+ - `find`: Find if there exists any pair of numbers which sum is equal to the value.
+ - **Example:**
+    ```python
+    add(1)
+    add(3)
+    add(5)
+    find(4) # return True
+    find(7) # return False
+    ```
+ - [twosumIII](https://github.com/tristaaa/lcproblems/blob/master/twosumiii.py)
+
 
 #### -two sum - input is a binary search tree
  - Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
@@ -92,6 +109,7 @@
  - [foursum](https://github.com/tristaaa/lcproblems/blob/master/foursum.py)
     - a general solution for all numbers of N sum using two pointers
 
+
 #### -four sum count
  - Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
  - To make problem a bit easier, all A, B, C, D have same length of N where 0 ≤ N ≤ 500. All integers are in the range of -228 to 228 - 1 and the result is guaranteed to be at most 231 - 1.
@@ -133,13 +151,13 @@
     BSTIterator iterator = new BSTIterator(root);
     iterator.next();    # return 3
     iterator.next();    # return 7
-    iterator.hasNext(); # return true
+    iterator.hasNext(); # return True
     iterator.next();    # return 9
-    iterator.hasNext(); # return true
+    iterator.hasNext(); # return True
     iterator.next();    # return 15
-    iterator.hasNext(); # return true
+    iterator.hasNext(); # return True
     iterator.next();    # return 20
-    iterator.hasNext(); # return false
+    iterator.hasNext(); # return False
     ```
  - [bstIterator](https://github.com/tristaaa/lcproblems/blob/master/bstiter.py)
 
