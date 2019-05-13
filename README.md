@@ -104,6 +104,19 @@
  - [3sumClosest](https://github.com/tristaaa/lcproblems/blob/master/threesumclosest.py)
 
 
+#### -three sum smaller
+ - Given an array of n integers `nums` and a target, find the number of index triplets (i,j,k) with 0<=i<j<k<n that satisfy the condition: `nums[i]+nums[j]+nums[k] < target`.
+ -- **Example:**
+    ```python
+    Input: nums = [-2,0,1,3], and target = 2
+    Output: 2
+    Explanation: Because there are two triplets which sums are less than 2:
+        [-2,0,1]
+        [-2,0,3]
+    ```
+ - [3sumSmaller](https://github.com/tristaaa/lcproblems/blob/master/threesumsmaller.py)
+
+
 
 ### 1.3 Four Sum
 #### -basic
