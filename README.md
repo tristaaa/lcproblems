@@ -265,6 +265,17 @@
  - [addStrings](https://github.com/tristaaa/lcproblems/blob/master/addstrings.py)
 
 
+#### -add two numbers using bit manipulation
+ - Calculate the sum of two integers a and b, but you are not allowed to use the operator `+` and `-`.
+ - **Example:**
+    ```python
+    Input: a = -2, b = 3
+    Output: 1
+    ```
+ - [addTwoNumBitOps](https://github.com/tristaaa/lcproblems/blob/master/addtwonumBitOps.py)
+  - Extension: [A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
+
+
 
 
 
