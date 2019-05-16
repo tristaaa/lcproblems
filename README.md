@@ -195,6 +195,7 @@
 
 ## | Add problems
 ### 3.1 Add Two Numbers
+#### -basic -form of Linked List
  - You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. 
  - Add the two numbers and return it as a linked list.
  - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -207,8 +208,28 @@
  - [addTwoNumbers](https://github.com/tristaaa/lcproblems/blob/master/addtwonum.py)
 
 
+#### -add an integer to an array-form of integer
+ - For a non-negative integer `X`, the array-form of `X `is an array of its digits in left to right order.  For example, if `X` = 1231, then the array form is [1,2,3,1].
+ - Given the array-form `A` of a non-negative integer `X`, return the array-form of the integer `X+K`.
+ - Note: 
+  - 1 <= A.length <= 10000
+  - 0 <= A[i] <= 9
+  - 0 <= K <= 10000
+  - If A.length > 1, then A[0] != 0
+ - **Example:**
+    ```python
+    Input: A = [1,2,0,0], K = 34
+    Output: [1,2,3,4]
+    Explanation: 1200 + 34 = 1234
 
-### 3.2 Add Binary
+    Input: A = [9,9,9,9,9,9,9,9,9,9], K = 1
+    Output: [1,0,0,0,0,0,0,0,0,0,0]
+    Explanation: 9999999999 + 1 = 10000000000
+    ```
+ - [addToArray-formOfInt](https://github.com/tristaaa/lcproblems/blob/master/add2arrayformofint.py)
+
+
+#### -add two binary strings
  - Given two binary strings, return their sum (also a binary string).
  - The input strings are both non-empty and contains only characters 1 or 0.
  - **Example:**
@@ -222,8 +243,7 @@
  - [addBinary](https://github.com/tristaaa/lcproblems/blob/master/addbinary.py)
 
 
-
-### 3.3 Add Strings
+### -add two integer strings
  - Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
  - Note: 
   - The length of both num1 and num2 is < 5100.
