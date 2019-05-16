@@ -6,6 +6,8 @@
 &ensp;&ensp;[- Four Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-four-sum)<br>
 [| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
 &ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
+[| Add problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-problems)<br>
+&ensp;&ensp;[- Add Two Numbers](https://github.com/tristaaa/lcproblems/blob/master/README.md#31-add-two-numbers)<br>
 
 
 ---
@@ -188,6 +190,22 @@
     iterator.hasNext(); # return False
     ```
  - [bstIterator](https://github.com/tristaaa/lcproblems/blob/master/bstiter.py)
+
+
+
+## | Add problems
+### 3.1 Add Two Numbers
+ - You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. 
+ - Add the two numbers and return it as a linked list.
+ - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ - **Example:**
+    ```python
+    Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+    Output: 7 -> 0 -> 8
+    Explanation: 342 + 465 = 807.
+    ```
+ - [addTwoNumbers](https://github.com/tristaaa/lcproblems/blob/master/addtwonum.py)
+
 
 
 
