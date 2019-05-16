@@ -208,6 +208,34 @@
 
 
 
+### 3.2 Add Binary
+ - Given two binary strings, return their sum (also a binary string).
+ - The input strings are both non-empty and contains only characters 1 or 0.
+ - **Example:**
+    ```python
+    Input: a = "11", b = "1"
+    Output: "100"
+
+    Input: a = "1010", b = "1011"
+    Output: "10101"
+    ```
+ - [addBinary](https://github.com/tristaaa/lcproblems/blob/master/addbinary.py)
+
+
+
+### 3.3 Add Strings
+ - Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
+ - Note: 
+  - The length of both num1 and num2 is < 5100.
+  - Both num1 and num2 contains only digits 0-9.
+  - Both num1 and num2 does not contain any leading zero.
+  - You must not use any built-in BigInteger library or convert the inputs to integer directly.
+ - [addStrings](https://github.com/tristaaa/lcproblems/blob/master/addstrings.py)
+
+
+
+
+
 
 
 
