@@ -8,7 +8,13 @@
 &ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
 [| Add problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-problems)<br>
 &ensp;&ensp;[- Add Two Numbers](https://github.com/tristaaa/lcproblems/blob/master/README.md#31-add-two-numbers)<br>
-
+&ensp;&ensp;&ensp;&ensp;[- Basic (Linked List)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic--form-of-linked-list)<br>
+&ensp;&ensp;&ensp;&ensp;[- Not Reversed (Linked List)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-form-of-linked-listnot-reversed-order)<br>
+&ensp;&ensp;&ensp;&ensp;[- Add to Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-an-integer-to-an-array-form-of-integer)<br>
+&ensp;&ensp;&ensp;&ensp;[- Add Binary Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-binary-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- Add Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-integer-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- Add Integer Using Bit Manipulation](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-numbers-using-bit-manipulation)<br>
+&ensp;&ensp;&ensp;&ensp;[- Multiply Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-numbers-using-bit-manipulation)<br>
 
 ---
 
@@ -276,7 +282,7 @@
   - Extension: [A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
 
 
-#### -*** multiply numbers***(string type) 
+#### - ***multiply integer strings***
  - Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
  - **Example:**
     ```python
