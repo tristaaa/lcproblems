@@ -255,7 +255,7 @@
  - [addBinary](https://github.com/tristaaa/lcproblems/blob/master/addbinary.py)
 
 
-### -add two integer strings
+#### -add two integer strings
  - Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
  - Note: 
   - The length of both num1 and num2 is < 5100.
@@ -275,6 +275,15 @@
  - [addTwoNumBitOps](https://github.com/tristaaa/lcproblems/blob/master/addtwonumBitOps.py)
   - Extension: [A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
 
+
+#### -*** multiply numbers***(string type) 
+ - Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+ - **Example:**
+    ```python
+    Input: num1 = "123", num2 = "456"
+    Output: "56088"
+    ```
+ - [multiplyNumbers](https://github.com/tristaaa/lcproblems/blob/master/multiplynum.py)
 
 
 
