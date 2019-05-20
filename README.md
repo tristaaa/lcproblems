@@ -14,7 +14,8 @@
 &ensp;&ensp;&ensp;&ensp;[- Add Binary Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-binary-strings)<br>
 &ensp;&ensp;&ensp;&ensp;[- Add Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-integer-strings)<br>
 &ensp;&ensp;&ensp;&ensp;[- Add Integer Using Bit Manipulation](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-numbers-using-bit-manipulation)<br>
-&ensp;&ensp;&ensp;&ensp;[- Multiply Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-numbers-using-bit-manipulation)<br>
+&ensp;&ensp;&ensp;&ensp;[- Multiply Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#--multiply-integer-strings)<br>
+[| Substring problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-substring-problems)<br>
 
 ---
 
@@ -32,7 +33,6 @@
     ```
  - [twosum](https://github.com/tristaaa/lcproblems/blob/master/twosum.py)
 
-
 #### -two sum - input array sorted
  - Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
  - The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
@@ -47,7 +47,6 @@
     ```
  - [twosumII](https://github.com/tristaaa/lcproblems/blob/master/twosumii.py)
 
-
 #### -two sum - design a data structure
  - Design and implement a TwoSum class. It should support the following operations: `add` and `find`.
  - `add`: Add the number to an internal data structure.
@@ -61,7 +60,6 @@
     find(7) # return False
     ```
  - [twosumIII](https://github.com/tristaaa/lcproblems/blob/master/twosumiii.py)
-
 
 #### -two sum - input is a binary search tree
  - Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
@@ -81,7 +79,6 @@
  - [twosumIV](https://github.com/tristaaa/lcproblems/blob/master/twosumiv.py)
 
 
-
 ### 1.2 Three Sum
 #### -basic
  - Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? 
@@ -99,7 +96,6 @@
     ```
  - [3sum](https://github.com/tristaaa/lcproblems/blob/master/threesum.py)
 
-
 #### -three sum closest
  - Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. 
  - Return the sum of the three integers. You may assume that each input would have exactly one solution.
@@ -110,7 +106,6 @@
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
     ```
  - [3sumClosest](https://github.com/tristaaa/lcproblems/blob/master/threesumclosest.py)
-
 
 #### -three sum smaller
  - Given an array of n integers `nums` and a target, find the number of index triplets `(i,j,k)` with `0<=i<j<k<n` that satisfy the condition: `nums[i]+nums[j]+nums[k] < target`.
@@ -145,7 +140,6 @@
  - [4sum](https://github.com/tristaaa/lcproblems/blob/master/foursum.py)
     - a general solution for all numbers of N sum using two pointers
 
-
 #### -four sum count
  - Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
  - To make problem a bit easier, all A, B, C, D have same length of N where 0 ≤ N ≤ 500. All integers are in the range of -228 to 228 - 1 and the result is guaranteed to be at most 231 - 1.
@@ -166,6 +160,7 @@
     2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
     ```
  - [4sumCount](https://github.com/tristaaa/lcproblems/blob/master/foursumcount.py)
+
 
 
 ## | Stack problems
@@ -213,7 +208,6 @@
     ```
  - [addTwoNumbers](https://github.com/tristaaa/lcproblems/blob/master/addtwonum.py)
 
-
 #### -form of Linked List(not reversed order)
  - You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -224,7 +218,6 @@
     Output: 7 -> 8 -> 0 -> 7
     ```
  - [addTwoNumbersII](https://github.com/tristaaa/lcproblems/blob/master/addtwonumii.py)
-
 
 #### -add an integer to an array-form of integer
  - For a non-negative integer `X`, the array-form of `X `is an array of its digits in left to right order.  For example, if `X` = 1231, then the array form is [1,2,3,1].
@@ -246,7 +239,6 @@
     ```
  - [addToArray-formOfInt](https://github.com/tristaaa/lcproblems/blob/master/add2arrayformofint.py)
 
-
 #### -add two binary strings
  - Given two binary strings, return their sum (also a binary string).
  - The input strings are both non-empty and contains only characters 1 or 0.
@@ -260,7 +252,6 @@
     ```
  - [addBinary](https://github.com/tristaaa/lcproblems/blob/master/addbinary.py)
 
-
 #### -add two integer strings
  - Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
  - Note: 
@@ -269,7 +260,6 @@
   - Both num1 and num2 does not contain any leading zero.
   - You must not use any built-in BigInteger library or convert the inputs to integer directly.
  - [addStrings](https://github.com/tristaaa/lcproblems/blob/master/addstrings.py)
-
 
 #### -add two numbers using bit manipulation
  - Calculate the sum of two integers a and b, but you are not allowed to use the operator `+` and `-`.
@@ -281,7 +271,6 @@
  - [addTwoNumBitOps](https://github.com/tristaaa/lcproblems/blob/master/addtwonumBitOps.py)
   - Extension: [A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
 
-
 #### - ***multiply integer strings***
  - Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
  - **Example:**
@@ -291,6 +280,51 @@
     ```
  - [multiplyNumbers](https://github.com/tristaaa/lcproblems/blob/master/multiplynum.py)
 
+
+### 3.2 Add Digits
+ - Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+ - Given a solution with O(1) running time.
+ - **Example:**
+    ```python
+    Input: 38
+    Output: 2 
+    Explanation: The process is like: 3 + 8 = 11, 1 + 1 = 2. 
+        Since 2 has only one digit, return it.
+    ```
+ - [addDigits](https://github.com/tristaaa/lcproblems/blob/master/adddigits.py)
+
+
+
+## | Substring problems
+### 4.1 Repeated Substring
+ - Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. 
+ - You may assume the given string consists of lowercase English letters only and its length will not exceed 10000.
+ - **Example:**
+    ```python
+    Input: "abab"
+    Output: True
+    Explanation: It's the substring "ab" twice.
+
+    Input: "aba"
+    Output: False
+    ```
+ - [repeatedSubstr](https://github.com/tristaaa/lcproblems/blob/master/isrepeatedsubstr.py) 
+
+
+### 4.2 Longest Substring
+#### -longest substring w/o repeating chars
+ - Given a string, find the length of the longest substring without repeating characters.
+ - **Example:**
+    ```python
+    Input: "abcabcbb"
+    Output: 3 
+    Explanation: The answer is "abc", with the length of 3. 
+
+    Input: "bbbbb"
+    Output: 1
+    Explanation: The answer is "b", with the length of 1.
+    ```
+ - [longestSubstrWORepeatingChars](https://github.com/tristaaa/lcproblems/blob/master/lssworeapeatingchars.py)
 
 
 
