@@ -389,7 +389,17 @@
 
 
 ### 5.2 Palindrome Number
+ - Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+- **Example:**
+    ```python
+    Input: 121
+    Output: true
 
+    Input: -121
+    Output: false
+    Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+    ```
+ - [palindromeNumber](https://github.com/tristaaa/lcproblems/blob/master/palindromenum.py)
 
 
 ### 5.3 Palindrome Linked List
@@ -400,6 +410,22 @@
     Output: True
     ```
  - [palindromell](https://github.com/tristaaa/lcproblems/blob/master/palindromell.py)
+
+
+### 5.4 Longest Palindrome
+ - Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+ - This is case sensitive, for example "Aa" is not considered a palindrome here.
+ - Note: Assume the length of given string will not exceed 1,010.
+ - **Example:**
+    ```python
+    Input: "abccccdd"
+
+    Output: 7
+
+    Explanation:
+    One longest palindrome that can be built is "dccaccd", whose length is 7.
+    ```
+ - [longestPalindrome](https://github.com/tristaaa/lcproblems/blob/master/palindromelongest.py)
 
 
 
