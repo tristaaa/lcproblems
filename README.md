@@ -326,10 +326,80 @@
     ```
  - [longestSubstrWORepeatingChars](https://github.com/tristaaa/lcproblems/blob/master/lssworeapeatingchars.py)
 
+#### -longest palindromic substring 
+ - Given a string s, find the longest palindromic substring in s. 
+ - You may assume that the maximum length of s is 1000.
+ - **Example:**
+    ```python
+    Input: "babad"
+    Output: "bab"
+    Note: "aba" is also a valid answer.
+
+    Input: "cbbd"
+    Output: "bb"
+    ```
+ - [longestPalindromicSubstr](https://github.com/tristaaa/lcproblems/blob/master/lsspalindromic.py)
+
+
+### 4.3 Count Binary Substrings
+ - Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
+ - Substrings that occur multiple times are counted the number of times they occur.
+ - **Example:**
+    ```python
+    Input: "00110011"
+    Output: 6
+    Explanation: There are 6 substrings that have equal number of consecutive 1's and 0's: "0011", "01", "1100", "10", "0011", and "01".
+
+    Notice that some of these substrings repeat and are counted the number of times they occur.
+
+    Also, "00110011" is not a valid substring because all the 0's (and 1's) are not grouped together.
+    ```
+ - [cntBinarySubstr](https://github.com/tristaaa/lcproblems/blob/master/cntbinarysubstr.py)
 
 
 
+## | Palindrome problems
+### 5.1 Valid Palindrome 
+#### -basic 
+ - Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+ - Note: For the purpose of this problem, we define empty string as valid palindrome.
+ - **Example:**
+    ```python
+    Input: "A man, a plan, a canal: Panama"
+    Output: true
+    ```
+ - [validPalindrome](https://github.com/tristaaa/lcproblems/blob/master/palindromevalid.py)
 
+#### -can delete one char
+ - Given a non-empty string s, you may delete at most one character. 
+ - Judge whether you can make it a palindrome.
+ - Note: 
+  - The string will only contain lowercase characters a-z. 
+  - The maximum length of the string is 50000.
+ - **Example:**
+    ```python
+    Input: "aba"
+    Output: True
+
+    Input: "abca"
+    Output: True
+    Explanation: You could delete the character 'c'.
+    ```
+ - [validPalindromeII](https://github.com/tristaaa/lcproblems/blob/master/palindromevalidii.py)
+
+
+### 5.2 Palindrome Number
+
+
+
+### 5.3 Palindrome Linked List
+ - Given a singly linked list, determine if it is a palindrome.
+ - **Example:**
+    ```python
+    Input: 1->2->2->1
+    Output: True
+    ```
+ - [palindromell](https://github.com/tristaaa/lcproblems/blob/master/palindromell.py)
 
 
 
