@@ -7,9 +7,9 @@ class Solution:
             :rtype: bool
         """
         # method 1 [64 ms]
-        # if x<0: return False
-        # strint = str(x)
-        # return strint==strint[::-1]
+        if x<0: return False
+        strint = str(x)
+        return strint==strint[::-1]
 
         # method 2[60 ms]
         # reverse the number x in two part
@@ -30,7 +30,6 @@ class Solution:
         ranger = 1
         while x / ranger >= 10:
             ranger *= 10
-
         while x:
             left = x // ranger
             right = x % 10
@@ -39,7 +38,6 @@ class Solution:
             
             x = (x % ranger) // 10
             ranger //= 100
-
         return True
 
 
