@@ -27,13 +27,13 @@
 [| Substring problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-substring-problems)<br>
 &ensp;&ensp;[- Repeated Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#41-repeated-substring)<br>
 &ensp;&ensp;[- Longest Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#42-longest-substring)<br>
-&ensp;&ensp;&ensp;&ensp;[- Longest Substring w/o Repeating Chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-wo-repeating-chars)<br>
-&ensp;&ensp;&ensp;&ensp;[- Longest Palindromic Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-palindromic-substring)<br>
+&ensp;&ensp;&ensp;&ensp;[- longest substring w/o repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-wo-repeating-chars)<br>
+&ensp;&ensp;&ensp;&ensp;[- longest palindromic substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-palindromic-substring)<br>
 &ensp;&ensp;[- Count Binary Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#43-count-binary-substrings)<br>
 [| Palindrome problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-problems)<br>
 &ensp;&ensp;[- Valid Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-valid-palindrome)<br>
-&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-basic)<br>
-&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (can delete one char)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-can-delete-one-char)<br>
+&ensp;&ensp;&ensp;&ensp;[- valid palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- valid palindrome (can delete one char)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-can-delete-one-char)<br>
 &ensp;&ensp;[- Palindrome Number](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-palindrome-number)<br>
 &ensp;&ensp;[- Palindrome Linked List](https://github.com/tristaaa/lcproblems/blob/master/README.md#53-palindrome-linked-list)<br>
 &ensp;&ensp;[- Longest Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#54-longest-palindrome)<br>
