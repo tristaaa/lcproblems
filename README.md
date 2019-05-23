@@ -2,26 +2,37 @@
 
 [| Sum problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-sum-problems)<br>
 &ensp;&ensp;[- Two Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-two-sum)<br>
+&ensp;&ensp;&ensp;&ensp;[- two sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-)<br>
 &ensp;&ensp;[- Three Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-three-sum)<br>
 &ensp;&ensp;[- Four Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-four-sum)<br>
 [| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
 &ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
 [| Add problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-problems)<br>
 &ensp;&ensp;[- Add Two Numbers](https://github.com/tristaaa/lcproblems/blob/master/README.md#31-add-two-numbers)<br>
-&ensp;&ensp;&ensp;&ensp;[- Basic (Linked List)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic--form-of-linked-list)<br>
-&ensp;&ensp;&ensp;&ensp;[- Not Reversed (Linked List)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-form-of-linked-listnot-reversed-order)<br>
-&ensp;&ensp;&ensp;&ensp;[- Add to Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-an-integer-to-an-array-form-of-integer)<br>
-&ensp;&ensp;&ensp;&ensp;[- Add Binary Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-binary-strings)<br>
-&ensp;&ensp;&ensp;&ensp;[- Add Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-integer-strings)<br>
-&ensp;&ensp;&ensp;&ensp;[- Add Integer Using Bit Manipulation](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-numbers-using-bit-manipulation)<br>
-&ensp;&ensp;&ensp;&ensp;[- Multiply Integer Strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#--multiply-integer-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- add two number (reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic--form-of-linked-list)<br>
+&ensp;&ensp;&ensp;&ensp;[- add two number (not reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-form-of-linked-listnot-reversed-order)<br>
+&ensp;&ensp;&ensp;&ensp;[- add to array](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-an-integer-to-an-array-form-of-integer)<br>
+&ensp;&ensp;&ensp;&ensp;[- add binary strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-binary-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- add integer strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-integer-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- add integer using bit manipulation](https://github.com/tristaaa/lcproblems/blob/master/READE.md#-add-two-numbers-using-bit-manipulation)<br>
+&ensp;&ensp;&ensp;&ensp;[- multiply integer strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#--multiply-integer-strings)<br>
 [| Substring problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-substring-problems)<br>
+&ensp;&ensp;[- Repeated Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#41-repeated-substring)<br>
+&ensp;&ensp;[- Longest Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#42-longest-substring)<br>
+&ensp;&ensp;&ensp;&ensp;[- Longest Substring w/o Repeating Chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-wo-repeating-chars)<br>
+&ensp;&ensp;&ensp;&ensp;[- Longest Palindromic Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-palindromic-substring)<br>
+&ensp;&ensp;[- Count Binary Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#43-count-binary-substrings)<br>
+[| Palindrome problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-problems)<br>
+&ensp;&ensp;[- Valid Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-valid-palindrome)<br>
+&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic-3)<br>
+&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (can delete one char)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-can-delete-one-char)<br>
+Longest Palindrome
 
 ---
 
 ## | Sum problems
 ### 1.1 Two Sum
-#### -basic
+#### -two sum (basic)
  - Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  - You may assume that each input would have exactly one solution, and you may not use the same element twice.
  - **Example:**
@@ -33,7 +44,7 @@
     ```
  - [twosum](https://github.com/tristaaa/lcproblems/blob/master/twosum.py)
 
-#### -two sum - input array sorted
+#### -two sum (input array sorted)
  - Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
  - The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
  - Note: 
@@ -47,7 +58,7 @@
     ```
  - [twosumII](https://github.com/tristaaa/lcproblems/blob/master/twosumii.py)
 
-#### -two sum - design a data structure
+#### -two sum (design a data structure)
  - Design and implement a TwoSum class. It should support the following operations: `add` and `find`.
  - `add`: Add the number to an internal data structure.
  - `find`: Find if there exists any pair of numbers which sum is equal to the value.
@@ -61,7 +72,7 @@
     ```
  - [twosumIII](https://github.com/tristaaa/lcproblems/blob/master/twosumiii.py)
 
-#### -two sum - input is a binary search tree
+#### -two sum (input is a binary search tree)
  - Given a Binary Search Tree and a target number, return true if there exist two elements in the BST such that their sum is equal to the given target.
  -  **Example:**
     ```python
@@ -80,7 +91,7 @@
 
 
 ### 1.2 Three Sum
-#### -basic
+#### -three sum (basic)
  - Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? 
  - Find all unique triplets in the array which gives the sum of zero.
  - Note: The solution set must not contain duplicate triplets.
@@ -122,7 +133,7 @@
 
 
 ### 1.3 Four Sum
-#### -basic
+#### -four sum (basic)
  - Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? 
  - Find all unique quadruplets in the array which gives the sum of target.
  - Note: The solution set must not contain duplicate quadruplets.
@@ -196,7 +207,7 @@
 
 ## | Add problems
 ### 3.1 Add Two Numbers
-#### -basic -form of Linked List
+#### -add two number (reversed linked list)
  - You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. 
  - Add the two numbers and return it as a linked list.
  - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -208,7 +219,7 @@
     ```
  - [addTwoNumbers](https://github.com/tristaaa/lcproblems/blob/master/addtwonum.py)
 
-#### -form of Linked List(not reversed order)
+#### -add two number (reversed linked list)
  - You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  - Note: What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
@@ -219,7 +230,7 @@
     ```
  - [addTwoNumbersII](https://github.com/tristaaa/lcproblems/blob/master/addtwonumii.py)
 
-#### -add an integer to an array-form of integer
+#### -add to array
  - For a non-negative integer `X`, the array-form of `X `is an array of its digits in left to right order.  For example, if `X` = 1231, then the array form is [1,2,3,1].
  - Given the array-form `A` of a non-negative integer `X`, return the array-form of the integer `X+K`.
  - Note: 
@@ -239,7 +250,7 @@
     ```
  - [addToArray-formOfInt](https://github.com/tristaaa/lcproblems/blob/master/add2arrayformofint.py)
 
-#### -add two binary strings
+#### -add binary strings
  - Given two binary strings, return their sum (also a binary string).
  - The input strings are both non-empty and contains only characters 1 or 0.
  - **Example:**
@@ -252,7 +263,7 @@
     ```
  - [addBinary](https://github.com/tristaaa/lcproblems/blob/master/addbinary.py)
 
-#### -add two integer strings
+#### -add integer strings
  - Given two non-negative integers `num1` and `num2` represented as string, return the sum of `num1` and `num2`.
  - Note: 
   - The length of both num1 and num2 is < 5100.
@@ -261,7 +272,7 @@
   - You must not use any built-in BigInteger library or convert the inputs to integer directly.
  - [addStrings](https://github.com/tristaaa/lcproblems/blob/master/addstrings.py)
 
-#### -add two numbers using bit manipulation
+#### -add integer using bit manipulation
  - Calculate the sum of two integers a and b, but you are not allowed to use the operator `+` and `-`.
  - **Example:**
     ```python
@@ -360,7 +371,7 @@
 
 ## | Palindrome problems
 ### 5.1 Valid Palindrome 
-#### -basic 
+#### -valid palindrome (basic) 
  - Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
  - Note: For the purpose of this problem, we define empty string as valid palindrome.
  - **Example:**
@@ -370,7 +381,7 @@
     ```
  - [validPalindrome](https://github.com/tristaaa/lcproblems/blob/master/palindromevalid.py)
 
-#### -can delete one char
+#### -valid palindrome (can delete one char)
  - Given a non-empty string s, you may delete at most one character. 
  - Judge whether you can make it a palindrome.
  - Note: 
@@ -428,4 +439,5 @@
  - [longestPalindrome](https://github.com/tristaaa/lcproblems/blob/master/palindromelongest.py)
 
 
+### 5.5 Prime Palindrome
 
