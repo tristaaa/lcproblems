@@ -2,19 +2,27 @@
 
 [| Sum problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-sum-problems)<br>
 &ensp;&ensp;[- Two Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-two-sum)<br>
-&ensp;&ensp;&ensp;&ensp;[- two sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-)<br>
+&ensp;&ensp;&ensp;&ensp;[- two sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-two-sum-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- two sum (input array sorted)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-two-sum-input-array-sorted)<br>
+&ensp;&ensp;&ensp;&ensp;[- two sum (design a data structure)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-two-sum-design-a-data-structure)<br>
+&ensp;&ensp;&ensp;&ensp;[- two sum (input is a binary search tree)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-two-sum-input-is-a-binary-search-tree)<br>
 &ensp;&ensp;[- Three Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-three-sum)<br>
+&ensp;&ensp;&ensp;&ensp;[- three sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-three-sum-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- three sum closest](https://github.com/tristaaa/lcproblems/blob/master/README.md#-three-sum-closest)<br>
+&ensp;&ensp;&ensp;&ensp;[- three sum smaller](https://github.com/tristaaa/lcproblems/blob/master/README.md#-three-sum-smaller)<br>
 &ensp;&ensp;[- Four Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-four-sum)<br>
+&ensp;&ensp;&ensp;&ensp;[- four sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-four-sum-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- four sum count](https://github.com/tristaaa/lcproblems/blob/master/README.md#-four-sum-count)<br>
 [| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
 &ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
 [| Add problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-problems)<br>
 &ensp;&ensp;[- Add Two Numbers](https://github.com/tristaaa/lcproblems/blob/master/README.md#31-add-two-numbers)<br>
-&ensp;&ensp;&ensp;&ensp;[- add two number (reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic--form-of-linked-list)<br>
-&ensp;&ensp;&ensp;&ensp;[- add two number (not reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-form-of-linked-listnot-reversed-order)<br>
-&ensp;&ensp;&ensp;&ensp;[- add to array](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-an-integer-to-an-array-form-of-integer)<br>
-&ensp;&ensp;&ensp;&ensp;[- add binary strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-binary-strings)<br>
-&ensp;&ensp;&ensp;&ensp;[- add integer strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-integer-strings)<br>
-&ensp;&ensp;&ensp;&ensp;[- add integer using bit manipulation](https://github.com/tristaaa/lcproblems/blob/master/READE.md#-add-two-numbers-using-bit-manipulation)<br>
+&ensp;&ensp;&ensp;&ensp;[- add two number (reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-number-reversed-linked-list)<br>
+&ensp;&ensp;&ensp;&ensp;[- add two number (not reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-number-not-reversed-linked-list)<br>
+&ensp;&ensp;&ensp;&ensp;[- add to array](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-to-array)<br>
+&ensp;&ensp;&ensp;&ensp;[- add binary strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-binary-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- add integer strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-integer-strings)<br>
+&ensp;&ensp;&ensp;&ensp;[- add integer using bit manipulation](https://github.com/tristaaa/lcproblems/blob/master/READE.md#-add-integer-using-bit-manipulation)<br>
 &ensp;&ensp;&ensp;&ensp;[- multiply integer strings](https://github.com/tristaaa/lcproblems/blob/master/README.md#--multiply-integer-strings)<br>
 [| Substring problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-substring-problems)<br>
 &ensp;&ensp;[- Repeated Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#41-repeated-substring)<br>
@@ -24,9 +32,13 @@
 &ensp;&ensp;[- Count Binary Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#43-count-binary-substrings)<br>
 [| Palindrome problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-problems)<br>
 &ensp;&ensp;[- Valid Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-valid-palindrome)<br>
-&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-basic-3)<br>
+&ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-basic)<br>
 &ensp;&ensp;&ensp;&ensp;[- Valid Palindrome (can delete one char)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-can-delete-one-char)<br>
-Longest Palindrome
+&ensp;&ensp;[- Palindrome Number](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-palindrome-number)<br>
+&ensp;&ensp;[- Palindrome Linked List](https://github.com/tristaaa/lcproblems/blob/master/README.md#53-palindrome-linked-list)<br>
+&ensp;&ensp;[- Longest Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#54-longest-palindrome)<br>
+&ensp;&ensp;[- Prime Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#55-prime-palindrome)<br>
+
 
 ---
 
@@ -219,7 +231,7 @@ Longest Palindrome
     ```
  - [addTwoNumbers](https://github.com/tristaaa/lcproblems/blob/master/addtwonum.py)
 
-#### -add two number (reversed linked list)
+#### -add two number (not reversed linked list)
  - You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  - You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  - Note: What if you cannot modify the input lists? In other words, reversing the lists is not allowed.
