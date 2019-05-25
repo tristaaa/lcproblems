@@ -38,6 +38,8 @@
 &ensp;&ensp;[- Palindrome Linked List](https://github.com/tristaaa/lcproblems/blob/master/README.md#53-palindrome-linked-list)<br>
 &ensp;&ensp;[- Longest Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#54-longest-palindrome)<br>
 &ensp;&ensp;[- Prime Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#55-prime-palindrome)<br>
+&ensp;&ensp;[- Palindrome Partition](https://github.com/tristaaa/lcproblems/blob/master/README.md#55-palindrome-partition)<br>
+&ensp;&ensp;&ensp;&ensp;[- palindrome partition (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-partition-basic)<br>
 
 
 ---
@@ -452,4 +454,56 @@
 
 
 ### 5.5 Prime Palindrome
+ - Find the smallest prime palindrome greater than or equal to N.
+ - Recall that a number is prime if it's only divisors are 1 and itself, and it is greater than 1. 
+ - For example, 2,3,5,7,11 and 13 are primes.
+ - Recall that a number is a palindrome if it reads the same from left to right as it does from right to left. 
+ - For example, 12321 is a palindrome.
+ - Note:
+  - 1 <= N <= 10^8
+  - The answer is guaranteed to exist and be less than 2 * 10^8.
+ - **Example:**
+    ```python
+    Input: 6
+    Output: 7
+
+    Input: 8
+    Output: 11
+
+    Input: 13
+    Output: 101
+    ```
+ - [primePalindrome](https://github.com/tristaaa/lcproblems/blob/master/palindromeprime.py)
+
+
+### 5.6 Palindrome Partition
+#### palindrome partition (basic)
+ - Given a string s, partition s such that every substring of the partition is a palindrome.
+ - Return all possible palindrome partitioning of s.
+ - **Example:**
+    ```python
+    Input: "aab"
+    Output:
+    [
+      ["aa","b"],
+      ["a","a","b"]
+    ]
+    ```
+ - [palindromePartition](https://github.com/tristaaa/lcproblems/blob/master/palindromepartition.py)
+
+#### palindrome partition (min cut)
+ - Given a string s, partition s such that every substring of the partition is a palindrome.
+ - Return the minimum cuts needed for a palindrome partitioning of s.
+ - **Example:**
+    ```python
+    Input: "aab"
+    Output:
+    [
+      ["aa","b"],
+      ["a","a","b"]
+    ]
+    ```
+ - [palindromePartitionII](https://github.com/tristaaa/lcproblems/blob/master/palindromepartitionii.py)
+
+
 
