@@ -41,7 +41,10 @@
 &ensp;&ensp;[- Palindrome Partition](https://github.com/tristaaa/lcproblems/blob/master/README.md#56-palindrome-partition)<br>
 &ensp;&ensp;&ensp;&ensp;[- palindrome partition (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-partition-basic)<br>
 &ensp;&ensp;&ensp;&ensp;[- palindrome partition (min cut)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-partition-min-cut)<br>
-
+&ensp;&ensp;[- Palindrome Permutation](https://github.com/tristaaa/lcproblems/blob/master/README.md#57-palindrome-permutation)<br>
+&ensp;&ensp;&ensp;&ensp;[- palindrome permutation (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-permutation-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- palindrome permutation (list all possible ret)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-permutation-list-all-possible-ret)<br>
+&ensp;&ensp;[- Palindromic Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#58-palindromic-substrings)<br>
 
 ---
 
@@ -509,7 +512,7 @@
 
 ### 5.7 Palindrome Permutation
 #### -palindrome permutation (basic)
- - Given a string s, determine if there exists some palindromic permutations.
+ - Given a string s, determine if a permutation of the string could form a palindrome.
  - **Example:**
     ```python
     Input: "aabb"
@@ -535,4 +538,24 @@
     Output: []
     ```
  - [palindromePermutationII](https://github.com/tristaaa/lcproblems/blob/master/palindromepermutationii.py)
+  - Extension:[permutationII](https://github.com/tristaaa/lcproblems/blob/master/permutationii.py)
+
+
+  ### 5.8 Palindromic Substrings
+   - Given a string, count how many palindromic substrings in this string.
+   - The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
+   - Note: The input string length won't exceed 1000.
+   - **Example:**
+    ```python
+    Input: "abc"
+    Output: 3
+    Explanation: Three palindromic strings: "a", "b", "c".
+
+    Input: "aaa"
+    Output: 6
+    Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+    ```
+ - [palindromicSubstr](https://github.com/tristaaa/lcproblems/blob/master/palindromicsubstr.py)
+
+
 
