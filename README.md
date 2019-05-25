@@ -38,8 +38,9 @@
 &ensp;&ensp;[- Palindrome Linked List](https://github.com/tristaaa/lcproblems/blob/master/README.md#53-palindrome-linked-list)<br>
 &ensp;&ensp;[- Longest Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#54-longest-palindrome)<br>
 &ensp;&ensp;[- Prime Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#55-prime-palindrome)<br>
-&ensp;&ensp;[- Palindrome Partition](https://github.com/tristaaa/lcproblems/blob/master/README.md#55-palindrome-partition)<br>
+&ensp;&ensp;[- Palindrome Partition](https://github.com/tristaaa/lcproblems/blob/master/README.md#56-palindrome-partition)<br>
 &ensp;&ensp;&ensp;&ensp;[- palindrome partition (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-partition-basic)<br>
+&ensp;&ensp;&ensp;&ensp;[- palindrome partition (min cut)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-partition-min-cut)<br>
 
 
 ---
@@ -477,7 +478,7 @@
 
 
 ### 5.6 Palindrome Partition
-#### palindrome partition (basic)
+#### -palindrome partition (basic)
  - Given a string s, partition s such that every substring of the partition is a palindrome.
  - Return all possible palindrome partitioning of s.
  - **Example:**
@@ -491,7 +492,7 @@
     ```
  - [palindromePartition](https://github.com/tristaaa/lcproblems/blob/master/palindromepartition.py)
 
-#### palindrome partition (min cut)
+#### -palindrome partition (min cut)
  - Given a string s, partition s such that every substring of the partition is a palindrome.
  - Return the minimum cuts needed for a palindrome partitioning of s.
  - **Example:**
