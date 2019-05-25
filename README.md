@@ -507,4 +507,32 @@
  - [palindromePartitionII](https://github.com/tristaaa/lcproblems/blob/master/palindromepartitionii.py)
 
 
+### 5.7 Palindrome Permutation
+#### -palindrome permutation (basic)
+ - Given a string s, determine if there exists some palindromic permutations.
+ - **Example:**
+    ```python
+    Input: "aabb"
+    Output: True
+
+    Input: "abc"
+    Output: False
+    ```
+ - [palindromePermutation](https://github.com/tristaaa/lcproblems/blob/master/palindromepermutation.py)
+
+#### -palindrome permutation (list all possible ret)
+ - Given a string s, return all the palindromic permutations (without duplicates) of it. 
+ - Return an empty list if no palindromic permutation could be form.
+ - Hint:
+  - If a palindromic permutation exists, we just need to generate the first half of the string.
+  - To generate all distinct permutations of a (half of) string, use a similar approach from: `Permutations II` or `Next Permutation`.
+ - **Example:**
+    ```python
+    Input: "aabb"
+    Output: ["abba","baab"]
+
+    Input: "abc"
+    Output: []
+    ```
+ - [palindromePermutationII](https://github.com/tristaaa/lcproblems/blob/master/palindromepermutationii.py)
 
