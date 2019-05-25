@@ -33,10 +33,10 @@ class Solution:
 
         #     low,high = i+1, len(nums)-1
         #     while low<high:
-        #         currentsum = nums[i]+nums[low]+nums[high]
-        #         if currentsum<0:
+        #         tot = nums[i]+nums[low]+nums[high]
+        #         if tot<0:
         #             low += 1
-        #         elif currentsum>0:
+        #         elif tot>0:
         #             high -= 1
         #         else:
         #             ret.append([nums[i],nums[low],nums[high]])
