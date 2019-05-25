@@ -8,44 +8,44 @@ class Solution:
         # method 1 [68 ms]
         # Iterate the string, for each character, 
         # try to expand left and right to get the longest palindromic substring
-        # length = len(s)
-        # if length<=1: return s
+        length = len(s)
+        if length<=1: return s
 
-        # start,maxLen,i=0,1,0
-        # while i<length:
-        #     if i>=length - maxLen//2: break
+        start,maxLen,i=0,1,0
+        while i<length:
+            if i>=length - maxLen//2: break
 
-        #     left,right=i,i
-        #     # the middle char(s) of palindromic substring can be arbitrary number of the same char
-        #     # this step skip check if the palindromic substring is of pattern:"abba" or "aba"
-        #     while right<length-1 and s[right]==s[right+1]:
-        #         right+=1
-        #     # if there are many same chars on the left, just skip the steps of check these chars
-        #     i=right+1
-        #     while left>0 and right<length-1 and s[left-1]==s[right+1]:
-        #         left-=1
-        #         right+=1
-        #     if right-left+1>maxLen:
-        #         start,maxLen=left,right-left+1
+            left,right=i,i
+            # the middle char(s) of palindromic substring can be arbitrary number of the same char
+            # this step skip check if the palindromic substring is of pattern:"abba" or "aba"
+            while right<length-1 and s[right]==s[right+1]:
+                right+=1
+            # if there are many same chars on the left, just skip the steps of check these chars
+            i=right+1
+            while left>0 and right<length-1 and s[left-1]==s[right+1]:
+                left-=1
+                right+=1
+            if right-left+1>maxLen:
+                start,maxLen=left,right-left+1
 
-        # return s[start:start+maxLen]
+        return s[start:start+maxLen]
 
         # method 2 [2476 ms]
         # DP, dp[i][j] represent whether the substring s[i:j+1] is a panlindromic string
-        # if not s or len(s.strip())<1: return ''
+        if not s or len(s.strip())<1: return ''
 
-        # length = len(s)
-        # dp = [[0] * length for _ in range(length)]
+        length = len(s)
+        dp = [[0] * length for _ in range(length)]
 
-        # ret=''
-        # for i in range(length-1,-1,-1):
-        #     for j in range(i,length):
-        #         if s[i]==s[j] and (j-i<2 or dp[i+1][j-1]):
-        #             dp[i][j]=1
-        #             if len(ret)<j-i+1:
-        #                 ret=s[i:j+1]
+        ret=''
+        for i in range(length-1,-1,-1):
+            for j in range(i,length):
+                if s[i]==s[j] and (j-i<2 or dp[i+1][j-1]):
+                    dp[i][j]=1
+                    if len(ret)<j-i+1:
+                        ret=s[i:j+1]
 
-        # return ret
+        return ret
 
         # method 3 [84 ms]
         # Manacher's Algorithm
