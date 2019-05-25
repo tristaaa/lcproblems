@@ -42,6 +42,6 @@ class Solution:
 
 # test
 sol=Solution()
-s="cbababdfgtfa"
+s="cbababdfe"
 print("for string s: '%s', all possible partition such that each substring is a palindrome is: %s" % (s,sol.partition(s)))
 
