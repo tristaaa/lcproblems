@@ -11,15 +11,15 @@ class Solution:
         # method 1 [220 ms]
         # Define: dp[i][j] denotes whether the substring s[j:i+1] is a palindrome
         # dp[i][j]= 1 if s[i]==s[j] and (j-i<2 or dp[i+1][j-1])
-        # subcnt = 0
-        # n = len(s)
-        # dp = [[0]*n for i in range(n)]
-        # for i in range(n):
-        #     for j in range(i+1):
-        #         if s[i]==s[j] and (i-j<2 or dp[j+1][i-1]):
-        #             dp[j][i]=1
-        #             subcnt+=1
-        # return subcnt
+        subcnt = 0
+        n = len(s)
+        dp = [[0]*n for i in range(n)]
+        for i in range(n):
+            for j in range(i+1):
+                if s[i]==s[j] and (i-j<2 or dp[j+1][i-1]):
+                    dp[j][i]=1
+                    subcnt+=1
+        return subcnt
 
         # method 2[108 ms]
         subcnt = 0
