@@ -29,7 +29,9 @@
 &ensp;&ensp;[- Longest Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#42-longest-substring)<br>
 &ensp;&ensp;&ensp;&ensp;[- longest substring w/o repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-wo-repeating-chars)<br>
 &ensp;&ensp;&ensp;&ensp;[- longest palindromic substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-palindromic-substring)<br>
+&ensp;&ensp;&ensp;&ensp;[- longest substring w/ at least k repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-w-at-least-k-repeating-chars)<br>
 &ensp;&ensp;[- Count Binary Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#43-count-binary-substrings)<br>
+&ensp;&ensp;[- Unique Substrings in Wraparound String](https://github.com/tristaaa/lcproblems/blob/master/README.md#44-unique-substrings-in-wraparound-string)<br>
 [| Palindrome problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-problems)<br>
 &ensp;&ensp;[- Valid Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-valid-palindrome)<br>
 &ensp;&ensp;&ensp;&ensp;[- valid palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-basic)<br>
@@ -45,6 +47,8 @@
 &ensp;&ensp;&ensp;&ensp;[- palindrome permutation (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-permutation-basic)<br>
 &ensp;&ensp;&ensp;&ensp;[- palindrome permutation (list all possible ret)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-permutation-list-all-possible-ret)<br>
 &ensp;&ensp;[- Palindromic Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#58-palindromic-substrings)<br>
+[| Subsequence problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-subsequence-problems)<br>
+&ensp;&ensp;[- Longest Palindromic Subsequence](https://github.com/tristaaa/lcproblems/blob/master/README.md#61-longest-palindromic-subsequence)<br>
 
 ---
 
@@ -369,6 +373,22 @@
     ```
  - [longestPalindromicSubstr](https://github.com/tristaaa/lcproblems/blob/master/lsspalindromic.py)
 
+ #### -longest substring w/ at least k repeating chars
+  - Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
+  - **Example:**
+    ```python
+    Input: s = "aaabb", k = 3
+    Output: 3
+
+    The longest substring is "aaa", as 'a' is repeated 3 times.
+
+    Input: s = "ababbc", k = 2
+    Output: 5
+
+    The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
+    ```
+ - [longestSubstrWKRepeatingChars](https://github.com/tristaaa/lcproblems/blob/master/lsswkreapeatingchars.py)
+
 
 ### 4.3 Count Binary Substrings
  - Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
@@ -384,6 +404,29 @@
     Also, "00110011" is not a valid substring because all the 0's (and 1's) are not grouped together.
     ```
  - [cntBinarySubstr](https://github.com/tristaaa/lcproblems/blob/master/cntbinarysubstr.py)
+
+
+### 4.4 Unique Substrings in Wraparound String
+ - Consider the string `s` to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so `s` will look like this: "...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....".
+ - Now we have another string `p`. 
+ - Your job is to find out how many unique non-empty substrings of `p` are present in `s`. 
+ - In particular, your input is the string `p` and you need to output the number of different non-empty substrings of `p` in the string `s`.
+ - Note: `p` consists of only lowercase English letters and the size of p might be over 10000.
+ - **Example:**
+    ```python
+    Input: "a"
+    Output: 1
+    Explanation: Only the substring "a" of string "a" is in the string `s`.
+
+    Input: "cac"
+    Output: 2
+    Explanation: There are two substrings "a", "c" of string "cac" in the string `s`.
+
+    Input: "zab"
+    Output: 6
+    Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string `s`.
+    ```
+ - [unqSubstrInWraparoundStr](https://github.com/tristaaa/lcproblems/blob/master/unqsubstrinwraparoundstr.py)
 
 
 
