@@ -541,11 +541,11 @@
   - Extension:[permutationII](https://github.com/tristaaa/lcproblems/blob/master/permutationii.py)
 
 
-  ### 5.8 Palindromic Substrings
-   - Given a string, count how many palindromic substrings in this string.
-   - The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
-   - Note: The input string length won't exceed 1000.
-   - **Example:**
+### 5.8 Palindromic Substrings
+ - Given a string, count how many palindromic substrings in this string.
+ - The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
+ - Note: The input string length won't exceed 1000.
+ - **Example:**
     ```python
     Input: "abc"
     Output: 3
@@ -558,4 +558,20 @@
  - [palindromicSubstr](https://github.com/tristaaa/lcproblems/blob/master/palindromicsubstr.py)
 
 
+
+## | Subsequence problems
+### 6.1 Longest Palindromic Subsequence
+ - Given a string s, find the longest palindromic subsequence's length in s. 
+ - You may assume that the maximum length of s is 1000.
+ - **Example:**
+    ```python
+    Input: "bbbab"
+    Output: 4
+    Explanation: The possible longest palindromic subsequence is "bbbb".
+
+    Input: "cbbd"
+    Output: 2
+    Explanation: The possible longest palindromic subsequence is "bb".
+    ```
+ - [longestPalindromicSubseq](https://github.com/tristaaa/lcproblems/blob/master/lsseqpalindromic.py)
 
