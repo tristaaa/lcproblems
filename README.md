@@ -32,6 +32,7 @@
 &ensp;&ensp;&ensp;&ensp;[- longest substring w/ at least k repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-w-at-least-k-repeating-chars)<br>
 &ensp;&ensp;[- Count Binary Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#43-count-binary-substrings)<br>
 &ensp;&ensp;[- Unique Substrings in Wraparound String](https://github.com/tristaaa/lcproblems/blob/master/README.md#44-unique-substrings-in-wraparound-string)<br>
+&ensp;&ensp;[- Binary String W/ Substrings Representing 1-N](https://github.com/tristaaa/lcproblems/blob/master/README.md#45-binary-string-w-substrings-representing-1-n)<br>
 [| Palindrome problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-palindrome-problems)<br>
 &ensp;&ensp;[- Valid Palindrome](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-valid-palindrome)<br>
 &ensp;&ensp;&ensp;&ensp;[- valid palindrome (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-valid-palindrome-basic)<br>
@@ -427,6 +428,25 @@
     Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string `s`.
     ```
  - [unqSubstrInWraparoundStr](https://github.com/tristaaa/lcproblems/blob/master/unqsubstrinwraparoundstr.py)
+
+
+### 4.5 Binary String W/ Substrings Representing 1-N
+ - Given a binary string S (a string consisting only of '0' and '1's) and a positive integer N, return true if and only if for every integer X from 1 to N, the binary representation of X is a substring of S.
+ - Note:
+  - 1 <= len(S) <= 1000
+  - 1 <= N <= 10^9
+ - **Example:**
+    ```python
+    Input: S = "0110", N = 3
+    Output: true
+
+    Input: S = "0110", N = 4
+    Output: false
+    ```
+ - [binWSubstrRep1toN](https://github.com/tristaaa/lcproblems/blob/master/binwsubstrrep1ton.py)
+
+
+ 
 
 
 
