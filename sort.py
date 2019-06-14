@@ -265,7 +265,7 @@ def radixSort(arr,radix=10):
 while 1:
     li = [7,5,3,8,2,7,1,4,14,23,100]
     print("\nbefore:",li)
-    print("Sort methods:\n 1. Selection sort\n 2. Bubble sort\n 3. Insertion sort\n 4. Merge sort\n 5. Quick sort\n 6. Heap sort\n 7. Shell sort\n 8. Count sort\n 9. Digit sort\n")
+    print("Sort methods:\n 1. Selection sort\n 2. Bubble sort\n 3. Insertion sort\n 4. Merge sort\n 5. Quick sort\n 6. Heap sort\n 7. Shell sort\n 8. Count sort\n 9. Radix sort\n")
     alg = int(input("select the sorting method: "))
     if alg==1:
         selectionSort(li)
