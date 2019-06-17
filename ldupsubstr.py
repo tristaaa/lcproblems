@@ -1,5 +1,5 @@
-from functools import reduce
 import collections
+from functools import reduce
 
 class Solution:
     def longestDupSubstring(self, S):
@@ -18,8 +18,8 @@ class Solution:
         # Thus the suffix array is: [5,3,1,0,4,2] (corresponding suffixes: ["a","ana","anana","banana","na","nana"])
         # then the corresponding LCP array is: [1,3,0,0,2,-] idx i store the LCP of suffix i and i+1,
         # Thus, the result will be max(LCP) = 3
+        n = len(S)
         def buildSuffixArr(s):
-            n = len(s)
             suffixes = []
             for i in range(n):
                 nextRank = ord(s[i+1])-97 if i+1<n else -1
@@ -63,10 +63,9 @@ class Solution:
             # [5,3,1,0,4,2]
             return list(map(lambda x:x[0],suffixes))
 
-        lcp=[0]*len(S)
+        lcp=[0]*n
         def kasaiAlg(s,suffArr):
             ''' using kasai Alg to construct the LCP array'''
-            n = len(suffArr)
             inverSuff=[0]*n # the value of the ith suffArr will be the idx of inverSuff, whose value is i
             for i in range(n):
                 inverSuff[suffArr[i]]=i
@@ -112,44 +111,30 @@ class Solution:
         low, high = 0, len(S) - 1
         best = ''
 
-        def find_duplicate_substr_of_len_k(s, k):
+        A = [ord(c)-ord('a') for c in S]
+        MOD = (1 << 61) - 1
+        BASE = 26
+        def find_duplicate_substr_of_len_k(S, k):
             ''' see if there exist a substr of length k that have duplicate in the give string S '''
-            MOD = (1 << 61) - 1
-            BASE = 26
-            D = pow(BASE, k - 1, MOD) # same as pow(BASE, k-1) % MOD
-            chash = 0
-            seen = collections.defaultdict(list)
+            D = pow(BASE, k, MOD) # same as pow(BASE, k-1) % MOD
+            cur = reduce(lambda x, y: (x * 26 + y) % MOD, A[:k])
+            seen = {cur}
+            for i in range(k, len(S)):
+                cur = (cur * 26 + A[i] - A[i - k] * D) % MOD
+                if cur in seen: return S[i-k+1:i+1]
+                seen.add(cur)
 
-            for i in range(len(s)):
-                if i >= k:
-                    # aleays keep the rolling hash value belongs to a string of length k
-                    l_chval = ord(s[i - k]) - ord('a')
-                    chash = (chash - l_chval * D) % MOD # delete the hash value of the leftmost char
-
-                chval = ord(s[i]) - ord('a')
-                chash = (chash * BASE + chval) % MOD
-
-                # need to add the hashvalue starting from the first substr of len k
-                if i >= k - 1: 
-                    if chash in seen:
-                        substr_i = s[i - k + 1:i + 1] # the second substr i ends with the ith char with len k
-                        for j in seen[chash]:
-                            substr_j = s[j - k + 1:j + 1] # the previous substr j, same hash value
-                            if substr_i == substr_j:
-                                return substr_i
-
-                    seen[chash].append(i)
 
         # using binary search
-        while low <= high:
-            mid = (low + high) // 2
+        while low < high:
+            mid = (low + high+1) // 2
             substrk = find_duplicate_substr_of_len_k(S, mid)
 
             if substrk:
                 best = substrk
-                low = mid + 1
+                low = mid
             else:
-                high = mid - 1
+                high = mid-1
 
         return best
 
@@ -157,5 +142,6 @@ class Solution:
 # test
 sol=Solution()
 S="abacabaca"
+# S='aaaaaa'
 # S="banana"
 print("the longest duplicated substring of S: '%s' is: '%s'" % (S,sol.longestDupSubstring(S)))
