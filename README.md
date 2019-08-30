@@ -638,3 +638,10 @@
     ```
  - [longestPalindromicSubseq](https://github.com/tristaaa/lcproblems/blob/master/lsseqpalindromic.py)
 
+
+## | Uncategorized problems
+### 1. Find Median Sorted Arrays
+ - [medianSortedArr](https://github.com/tristaaa/lcproblems/blob/master/mediansortedarr.py)
+
+### 2. Reverse Integer
+ - [reverseInt](https://github.com/tristaaa/lcproblems/blob/master/reverseint.py)
