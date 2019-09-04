@@ -28,13 +28,15 @@ class Solution:
             :type str: str
             :rtype: int
         """
-        sign=0
+        # [36 ms]
+        sign=1
         i=0
         result=0
         INT_MAX=2**31-1
-        while(s[i]==' '):
+        if s=='': return 0
+        while(i<len(s) and s[i]==' '):
             i+=1
-        if s[i] in ['+','-']:
+        if i<len(s) and s[i] in ['+','-']:
             sign = 1-(s[i]=='-')*2
             i+=1
         while (i<len(s) and s[i] in '0123456789'):
@@ -50,7 +52,7 @@ s = "   -42 with words"
 s1 = "   abc-42 with words"
 s2 = "   -2147483649"
 s3 = "   +- 3"
-s4 = "   -"
+s4 = "42"
 print("my atoi function to convert a string to integer")
 print("will return 0 if string only contain whitespace chars, or the first char which is non-whitespace isn't a valid number")
 print("will return INT_MAX (2^31 − 1) or INT_MIN (−2^31) if the converted number is out of range(32-bit int)")
