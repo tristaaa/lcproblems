@@ -53,7 +53,7 @@
 [| Uncategorized problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-uncategorized-problems)<br>
 &ensp;&ensp;[- Find Median Sorted Arrays](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays)<br>
 &ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
-&ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integer-atoi)<br>
+&ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi)<br>
 &ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
 
 ---
