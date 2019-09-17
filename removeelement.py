@@ -16,5 +16,7 @@ class Solution:
 
 sol = Solution()
 nums=[0,1,2,2,3,0,4,2]
+nums_origin = nums.copy()
 val=2
-print("the length of the `nums`=%s after removing the value=%d is: %d" %(nums,val,sol.removeElement(nums, val)))
+newlen=sol.removeElement(nums, val)
+print("the length of the `nums`=%s after removing the value=%d is: %d, which becomes: %s" %(nums_origin,val,newlen,nums[:newlen]))
