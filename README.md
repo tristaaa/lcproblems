@@ -50,6 +50,11 @@
 &ensp;&ensp;[- Palindromic Substrings](https://github.com/tristaaa/lcproblems/blob/master/README.md#58-palindromic-substrings)<br>
 [| Subsequence problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-subsequence-problems)<br>
 &ensp;&ensp;[- Longest Palindromic Subsequence](https://github.com/tristaaa/lcproblems/blob/master/README.md#61-longest-palindromic-subsequence)<br>
+[| Uncategorized problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-uncategorized-problems)<br>
+&ensp;&ensp;[- Find Median Sorted Arrays](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays)<br>
+&ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
+&ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integer-atoi)<br>
+&ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
 
 ---
 
@@ -645,3 +650,9 @@
 
 ### 2. Reverse Integer
  - [reverseInt](https://github.com/tristaaa/lcproblems/blob/master/reverseint.py)
+
+### 3. String to Integer(atoi)
+ - [str2int(atoi)](https://github.com/tristaaa/lcproblems/blob/master/str2int_atoi.py)
+
+### 4. Remove Elements
+ - [removeelement](https://github.com/tristaaa/lcproblems/blob/master/removeelement.py)
