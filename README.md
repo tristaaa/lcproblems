@@ -55,6 +55,7 @@
 &ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
 &ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi)<br>
 &ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
+&ensp;&ensp;[- Remove Duplicates](https://github.com/tristaaa/lcproblems/blob/master/README.md#5-remove-duplicates)<br>
 
 ---
 
@@ -656,3 +657,12 @@
 
 ### 4. Remove Elements
  - [removeelement](https://github.com/tristaaa/lcproblems/blob/master/removeelement.py)
+
+### 5.1 Remove Duplicates from Sorted Array
+ - [removeduplicates](https://github.com/tristaaa/lcproblems/blob/master/removedup.py)
+
+### 5.2 Remove Duplicates from Sorted Array II
+ - [removeduplicatesii](https://github.com/tristaaa/lcproblems/blob/master/removedupii.py)
+
+### 6. Number of Dice Rolls With Target Sum
+ - [dicerollswtargetsum](https://github.com/tristaaa/lcproblems/blob/master/dicerollswtargetsum.py)
