@@ -390,6 +390,22 @@
     ```
  - [longestSubstrWKRepeatingChars](https://github.com/tristaaa/lcproblems/blob/master/lsswkreapeatingchars.py)
 
+ #### -longest duplicate substring
+  - Given a string S, consider all duplicated substrings: (contiguous) substrings of S that occur 2 or more times.  (The occurrences may overlap.)
+  - Return any duplicated substring that has the longest possible length.  (If S does not have a duplicated substring, the answer is "".)
+  - Note: 
+   - 2 <= len(S) <= 10^5
+   - `S` consists of lowercase English letters.
+  - **Example:**
+    ```python
+    Input: "banana"
+    Output: "ana"
+
+    Input: "abcd"
+    Output: ""
+    ```
+ - [longestDupSubstr](https://github.com/tristaaa/lcproblems/blob/master/ldupsubstr.py)
+
 
 ### 4.3 Count Binary Substrings
  - Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
@@ -446,7 +462,6 @@
  - [binWSubstrRep1toN](https://github.com/tristaaa/lcproblems/blob/master/binwsubstrrep1ton.py)
 
 
- 
 
 
 
