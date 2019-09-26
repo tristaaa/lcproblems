@@ -55,6 +55,12 @@
 &ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
 &ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi)<br>
 &ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
+&ensp;&ensp;[- Remove Duplicates from Sorted Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-remove-duplicates-from-sorted-array)<br>
+&ensp;&ensp;[- Remove Duplicates from Sorted Array II](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-remove-duplicates-from-sorted-array-ii)<br>
+&ensp;&ensp;[- Number of Dice Rolls With Target Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#6-number-of-dice-rolls-with-target-sum)<br>
+&ensp;&ensp;[- Find the Celebrity](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity)<br>
+&ensp;&ensp;[- Rotate Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array)<br>
+&ensp;&ensp;[- First Missing Positive](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive)<br>
 
 ---
 
@@ -687,8 +693,8 @@
  - [findcelebrity](https://github.com/tristaaa/lcproblems/blob/master/findcelebrity.py)
 
 ### 8. Rotate Array
-  - Given an array, rotate the array to the right by k steps, where k is non-negative.
-  - [rotatearr](https://github.com/tristaaa/lcproblems/blob/master/rotatearr.py)
+ - Given an array, rotate the array to the right by k steps, where k is non-negative.
+ - [rotatearr](https://github.com/tristaaa/lcproblems/blob/master/rotatearr.py)
 
 ### 9. First Missing Positive
  - Given an unsorted integer array, find the smallest missing positive integer.
