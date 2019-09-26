@@ -55,6 +55,7 @@
 &ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
 &ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi)<br>
 &ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
+&ensp;&ensp;[- Remove Duplicates](https://github.com/tristaaa/lcproblems/blob/master/README.md#5-remove-duplicates)<br>
 
 ---
 
@@ -657,6 +658,7 @@
 ### 4. Remove Elements
  - [removeelement](https://github.com/tristaaa/lcproblems/blob/master/removeelement.py)
 
+<<<<<<< HEAD
 ### 7. Find the Celebrity
  - Suppose you are at a party with n people (labeled from 0 to n - 1) and among them, there may exist one celebrity. The definition of a celebrity is that all the other n - 1 people know him/her but he/she does not know any of them.
  - Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: "Hi, A. Do you know B?" to get information of whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).
@@ -676,3 +678,13 @@
     Explanation: There are three persons labeled with 0, 1 and 2. graph[i][j] = 1 means person i knows person j, otherwise graph[i][j] = 0 means person i does not know person j. The celebrity is the person labeled as 1 because both 0 and 2 know him but 1 does not know anybody.
     ```
  - [findcelebrity](https://github.com/tristaaa/lcproblems/blob/master/findcelebrity.py)
+=======
+### 5.1 Remove Duplicates from Sorted Array
+ - [removeduplicates](https://github.com/tristaaa/lcproblems/blob/master/removedup.py)
+
+### 5.2 Remove Duplicates from Sorted Array II
+ - [removeduplicatesii](https://github.com/tristaaa/lcproblems/blob/master/removedupii.py)
+
+### 6. Number of Dice Rolls With Target Sum
+ - [dicerollswtargetsum](https://github.com/tristaaa/lcproblems/blob/master/dicerollswtargetsum.py)
+>>>>>>> 53d1f03c4d24b6d7dacb1bedac722ba01e55c8af
