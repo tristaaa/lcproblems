@@ -666,3 +666,16 @@
 
 ### 6. Number of Dice Rolls With Target Sum
  - [dicerollswtargetsum](https://github.com/tristaaa/lcproblems/blob/master/dicerollswtargetsum.py)
+
+### 9. First Missing Positive
+ - Given an unsorted integer array, find the smallest missing positive integer.
+ - Note: Your algorithm should run in O(n) time and uses constant extra space.
+ - **Example:**
+    ```python
+        Input: [3,4,-1,1]
+        Output: 2
+        
+        Input: [7,8,9,11,12]
+        Output: 1
+    ```
+ - [fstmisspos](https://github.com/tristaaa/lcproblems/blob/master/fstmisspos.py)
