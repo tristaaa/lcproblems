@@ -61,6 +61,7 @@
 &ensp;&ensp;[- Find the Celebrity](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity)<br>
 &ensp;&ensp;[- Rotate Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array)<br>
 &ensp;&ensp;[- First Missing Positive](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive)<br>
+&ensp;&ensp;[- Bulls and Cows](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows)<br>
 
 ---
 
@@ -651,28 +652,36 @@
 
 
 ## | Uncategorized problems
-### 1. Find Median Sorted Arrays
+### 1. Median of Two Sorted Arrays lc4
+ - hard
  - [medianSortedArr](https://github.com/tristaaa/lcproblems/blob/master/mediansortedarr.py)
 
-### 2. Reverse Integer
+### 2. Reverse Integer lc7
+ - easy
  - [reverseInt](https://github.com/tristaaa/lcproblems/blob/master/reverseint.py)
 
-### 3. String to Integer(atoi)
+### 3. String to Integer(atoi) lc8
+ - mediun
  - [str2int(atoi)](https://github.com/tristaaa/lcproblems/blob/master/str2int_atoi.py)
 
-### 4. Remove Elements
+### 4. Remove Elements lc27
+ - easy
  - [removeelement](https://github.com/tristaaa/lcproblems/blob/master/removeelement.py)
 
-### 5.1 Remove Duplicates from Sorted Array
+### 5.1 Remove Duplicates from Sorted Array lc26
+ - easy
  - [removeduplicates](https://github.com/tristaaa/lcproblems/blob/master/removedup.py)
 
-### 5.2 Remove Duplicates from Sorted Array II
+### 5.2 Remove Duplicates from Sorted Array II lc80
+ - mediun
  - [removeduplicatesii](https://github.com/tristaaa/lcproblems/blob/master/removedupii.py)
 
-### 6. Number of Dice Rolls With Target Sum
+### 6. Number of Dice Rolls With Target Sum lc1155
+ - medium
  - [dicerollswtargetsum](https://github.com/tristaaa/lcproblems/blob/master/dicerollswtargetsum.py)
 
-### 7. Find the Celebrity
+### 7. Find the Celebrity lc277
+ - medium
  - Suppose you are at a party with n people (labeled from 0 to n - 1) and among them, there may exist one celebrity. The definition of a celebrity is that all the other n - 1 people know him/her but he/she does not know any of them.
  - Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: "Hi, A. Do you know B?" to get information of whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).
  - You are given a helper function `bool knows(a, b)` which tells you whether A knows B. Implement a function `int findCelebrity(n)`. There will be exactly one celebrity if he/she is in the party. 
@@ -692,19 +701,89 @@
     ```
  - [findcelebrity](https://github.com/tristaaa/lcproblems/blob/master/findcelebrity.py)
 
-### 8. Rotate Array
+### 8. Rotate Array lc189
+ - easy
  - Given an array, rotate the array to the right by k steps, where k is non-negative.
  - [rotatearr](https://github.com/tristaaa/lcproblems/blob/master/rotatearr.py)
 
-### 9. First Missing Positive
+### 9. First Missing Positive lc41
+ - hard
  - Given an unsorted integer array, find the smallest missing positive integer.
  - Note: Your algorithm should run in O(n) time and uses constant extra space.
  - **Example:**
     ```python
-        Input: [3,4,-1,1]
-        Output: 2
-        
-        Input: [7,8,9,11,12]
-        Output: 1
+    Input: [3,4,-1,1]
+    Output: 2
+    
+    Input: [7,8,9,11,12]
+    Output: 1
     ```
  - [fstmisspos](https://github.com/tristaaa/lcproblems/blob/master/fstmisspos.py)
+
+### 10. Bulls and Cows lc299
+ - easy
+ - You are playing the following Bulls and Cows game with your friend: 
+    - You write down a number and ask your friend to guess what the number is. 
+    - Each time your friend makes a guess, you provide a hint that indicates how many digits in said guess match your secret number exactly in both digit and position (called **"bulls"**) and how many digits match the secret number but locate in the wrong position (called **"cows"**). 
+    - Your friend will use successive guesses and hints to eventually derive the secret number.
+ - Write a function to return a hint according to the secret number and friend's guess, use `A` to indicate the bulls and `B` to indicate the cows. 
+ - Note: 
+    - both secret number and friend's guess may contain duplicate digits.
+    - You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
+ - **Example:**
+    ```python
+    Input: secret = "1807", guess = "7810"
+
+    Output: "1A3B"
+
+    Explanation: 1 bull and 3 cows. The bull is 8, the cows are 0, 1 and 7.
+
+    Input: secret = "1123", guess = "0111"
+
+    Output: "1A1B"
+
+    Explanation: The 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
+    ```
+ - [bullandcow](https://github.com/tristaaa/lcproblems/blob/master/bullandcow.py)
+
+### 11. Gas Station lc134
+ - median
+ - There are N gas stations along a circular route, where the amount of gas at station i is gas[i].(i begins at 0)
+ - You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.
+ - Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1.
+ - Note: 
+    - If there exists a solution, it is guaranteed to be unique
+    - Both input arrays are non-empty and have the same length
+    - Each element in the input arrays is a non-negative integer
+ - **Example:**
+    ```python
+    Input: 
+    gas  = [1,2,3,4,5]
+    cost = [3,4,5,1,2]
+
+    Output: 3
+
+    Explanation:
+    Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+    Travel to station 4. Your tank = 4 - 1 + 5 = 8
+    Travel to station 0. Your tank = 8 - 2 + 1 = 7
+    Travel to station 1. Your tank = 7 - 3 + 2 = 6
+    Travel to station 2. Your tank = 6 - 4 + 3 = 5
+    Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
+    Therefore, return 3 as the starting index.
+
+    Input: 
+    gas  = [2,3,4]
+    cost = [3,4,3]
+
+    Output: -1
+
+    Explanation:
+    You can't start at station 0 or 1, as there is not enough gas to travel to the next station.
+    Let's start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+    Travel to station 0. Your tank = 4 - 3 + 2 = 3
+    Travel to station 1. Your tank = 3 - 3 + 3 = 3
+    You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
+    Therefore, you can't travel around the circuit once no matter where you start.
+    ```
+ - [gasstation](https://github.com/tristaaa/lcproblems/blob/master/gasstation.py)
