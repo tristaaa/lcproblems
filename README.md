@@ -51,17 +51,18 @@
 [| Subsequence problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-subsequence-problems)<br>
 &ensp;&ensp;[- Longest Palindromic Subsequence](https://github.com/tristaaa/lcproblems/blob/master/README.md#61-longest-palindromic-subsequence)<br>
 [| Uncategorized problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-uncategorized-problems)<br>
-&ensp;&ensp;[- Find Median Sorted Arrays](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays)<br>
-&ensp;&ensp;[- Reverse Integer](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer)<br>
-&ensp;&ensp;[- String to Integer(atoi)](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi)<br>
-&ensp;&ensp;[- Remove Elements](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements)<br>
-&ensp;&ensp;[- Remove Duplicates from Sorted Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-remove-duplicates-from-sorted-array)<br>
-&ensp;&ensp;[- Remove Duplicates from Sorted Array II](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-remove-duplicates-from-sorted-array-ii)<br>
-&ensp;&ensp;[- Number of Dice Rolls With Target Sum](https://github.com/tristaaa/lcproblems/blob/master/README.md#6-number-of-dice-rolls-with-target-sum)<br>
-&ensp;&ensp;[- Find the Celebrity](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity)<br>
-&ensp;&ensp;[- Rotate Array](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array)<br>
-&ensp;&ensp;[- First Missing Positive](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive)<br>
-&ensp;&ensp;[- Bulls and Cows](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows)<br>
+&ensp;&ensp;[- Find Median Sorted Arrays lc4](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays-lc4)<br>
+&ensp;&ensp;[- Reverse Integer lc7](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer-lc7)<br>
+&ensp;&ensp;[- String to Integer(atoi) lc8](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi-lc8)<br>
+&ensp;&ensp;[- Remove Elements lc27](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements-lc27)<br>
+&ensp;&ensp;[- Remove Duplicates from Sorted Array lc26](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-remove-duplicates-from-sorted-array-lc26)<br>
+&ensp;&ensp;[- Remove Duplicates from Sorted Array II lc80](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-remove-duplicates-from-sorted-array-ii-lc80)<br>
+&ensp;&ensp;[- Number of Dice Rolls With Target Sum lc1155](https://github.com/tristaaa/lcproblems/blob/master/README.md#6-number-of-dice-rolls-with-target-sum-lc1155)<br>
+&ensp;&ensp;[- Find the Celebrity lc277](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity-lc277)<br>
+&ensp;&ensp;[- Rotate Array lc189](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array-lc189)<br>
+&ensp;&ensp;[- First Missing Positive lc41](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive-lc41)<br>
+&ensp;&ensp;[- Bulls and Cows lc299](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows-lc299)<br>
+&ensp;&ensp;[- Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
 
 ---
 
