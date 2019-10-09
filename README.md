@@ -63,6 +63,9 @@
 &ensp;&ensp;[- First Missing Positive lc41](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive-lc41)<br>
 &ensp;&ensp;[- Bulls and Cows lc299](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows-lc299)<br>
 &ensp;&ensp;[- Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
+&ensp;&ensp;[- Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-gas-station-lc134)<br>
+&ensp;&ensp;[- Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-gas-station-lc134)<br>
+&ensp;&ensp;[- Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-gas-station-lc134)<br>
 
 ---
 
@@ -788,3 +791,61 @@
     Therefore, you can't travel around the circuit once no matter where you start.
     ```
  - [gasstation](https://github.com/tristaaa/lcproblems/blob/master/gasstation.py)
+
+### 12. Pascal's Triangle lc118
+ - easy
+ - Given a non-negative integer `numRows`, generate the first `numRows` of Pascal's triangle.
+ - In Pascal's triangle, each number is the sum of the two numbers directly above it.
+ - - **Example:**
+    ```python
+    Input: 5
+    Output:
+    [
+         [1],
+        [1,1],
+       [1,2,1],
+      [1,3,3,1],
+     [1,4,6,4,1]
+    ]
+    ```
+ - [pascaltriangle](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangle.py)
+
+### 13. Pascal's Triangle II lc119
+ - easy
+ - Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
+ - Note that the row index starts from 0.
+ - Optimize the algorithm to use only O(k) extra space
+ - In Pascal's triangle, each number is the sum of the two numbers directly above it.
+ - - **Example:**
+    ```python
+    Input: 5
+    Output:
+    [
+         [1],
+        [1,1],
+       [1,2,1],
+      [1,3,3,1],
+     [1,4,6,4,1]
+    ]
+    ```
+ - [pascaltriangleii](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangleii.py)
+
+
+### 14. Find Words That Can Be Formed by Characters lc1160
+ - easy
+ - You are given an array of strings words and a string chars.
+ - A string is good if it can be formed by characters from chars (each character can only be used once).
+ - Return the sum of lengths of all good strings in words.
+ - **Example:**
+    ```python
+    Input: words = ["cat","bt","hat","tree"], chars = "atach"
+    Output: 6
+    Explanation: 
+    The strings that can be formed are "cat" and "hat" so the answer is 3 + 3 = 6.
+
+    Input: words = ["hello","world","leetcode"], chars = "welldonehoneyr"
+    Output: 10
+    Explanation: 
+    The strings that can be formed are "hello" and "world" so the answer is 5 + 5 = 10.
+    ```
+ - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
