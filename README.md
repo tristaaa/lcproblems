@@ -63,9 +63,9 @@
 &ensp;&ensp;[- First Missing Positive lc41](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive-lc41)<br>
 &ensp;&ensp;[- Bulls and Cows lc299](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows-lc299)<br>
 &ensp;&ensp;[- Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
-&ensp;&ensp;[- Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems/blob/master/README.md#12-gas-station-lc134)<br>
-&ensp;&ensp;[- Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-gas-station-lc134)<br>
-&ensp;&ensp;[- Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems/blob/master/README.md#13-gas-station-lc134)<br>
+&ensp;&ensp;[- Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#12-pascals-triangle-lc118)<br>
+&ensp;&ensp;[- Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#13-pascals-triangle-ii-lc119)<br>
+&ensp;&ensp;[- Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
 
 ---
 
