@@ -11,19 +11,42 @@ class Solution:
         """
         # the range of h can be [0,N]
         # method 1: easiest way, sort citations first
-        # [48 ms]
+        # # [48 ms]
+        # N=len(citations)
+        # if N==0:return 0
+
+        # citations.sort()
+        # for hidx in range(N-1,0,-1):
+        #     if citations[N-hidx]>=hidx and citations[N-hidx-1]<=hidx:
+        #         return hidx
+        # if citations[-1]==0: return 0
+        # if citations[0]>=N: return N
+
+        # method 2: sorted it first
+        # solve it in O(log(N)) time, using binary search
         N=len(citations)
         if N==0:return 0
 
         citations.sort()
-        for hidx in range(N-1,0,-1):
-            if citations[N-hidx]>=hidx and citations[N-hidx-1]<=hidx:
+        low,high = 0, N-1
+        mid=0
+        while low<high:
+            mid = (low+high)//2
+            hidx = N-mid
+            # there are N-mid papers that have at least N-mid citations
+            if citations[mid]==hidx:
                 return hidx
-        if citations[-1]==0: return 0
-        if citations[0]>=N: return N
+            elif citations[mid]<hidx:
+                low=mid+1
+            else:
+                high=mid-1
+
+        # in the end low>high
+        return N-low
 
 
-        # method 2: faster way, use extra space, hash table
+
+        # method 3: faster way, use extra space, hash table
         # [48 ms]
         N=len(citations)
         if N==0: return 0
@@ -46,5 +69,5 @@ class Solution:
 
 sol = Solution()
 print("Def. H-index: h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each.")
-for citations in [[],[0],[1],[0,0],[1,1],[3,0,1,6,5]]:
+for citations in [[],[0],[1],[0,0],[1,1],[4,0,1,6,5]]:
     print("the hindex of given the researcher's citations list: %s is: %d" % (citations, sol.hIndex(citations)))
