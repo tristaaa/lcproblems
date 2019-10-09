@@ -10,18 +10,23 @@ class Solution:
         :type chars: str
         :rtype: int
         """
+        # [96 ms]
         length=0
-        for i in range(len(words)):
-            char=list(chars)
+        chardict = {}
+        for c in chars:
+            if c in chardict:
+                chardict[c]+=1
+            else:
+                chardict[c]=1
+
+        for word in words:
             flag=True
-            for l in words[i]:
-                if l in char:
-                    char.remove(l)
-                else:
+            for l in word:
+                if l not in chardict or chardict[l]<word.count(l):
                     flag=False
                     break
             if flag:
-                length+=len(words[i])
+                length+=len(word)
         return length
                 
 sol = Solution()
