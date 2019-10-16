@@ -66,6 +66,7 @@
 &ensp;&ensp;[- Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#12-pascals-triangle-lc118)<br>
 &ensp;&ensp;[- Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#13-pascals-triangle-ii-lc119)<br>
 &ensp;&ensp;[- Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
+&ensp;&ensp;[- H-index lc274](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
 
 ---
 
@@ -830,7 +831,6 @@
     ```
  - [pascaltriangleii](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangleii.py)
 
-
 ### 14. Find Words That Can Be Formed by Characters lc1160
  - easy
  - You are given an array of strings words and a string chars.
@@ -849,3 +849,62 @@
     The strings that can be formed are "hello" and "world" so the answer is 5 + 5 = 10.
     ```
  - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
+
+### 15. H-index lc274
+ - median
+ - Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
+ - According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each."
+ - Note: If there are several possible values for h, the maximum one is taken as the h-index.
+ - Hint: 
+    - An easy approach is to sort the array first.
+    - What are the possible values of h-index?
+    - A faster approach is to use extra space.
+ - **Example:**
+    ```python
+    Input: citations = [3,0,6,1,5]
+    Output: 3 
+    Explanation: [3,0,6,1,5] means the researcher has 5 papers in total and each of them had received 3, 0, 6, 1, 5 citations respectively. 
+        Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations each, her h-index is 3.
+    ```
+ - [hindex](https://github.com/tristaaa/lcproblems/blob/master/hindex.py)
+
+### 16.1 Shortest Word Distance lc243
+
+
+### 17. Before and After Puzzle lc1181
+ - median
+ - Given a list of `phrases`, generate a list of Before and After puzzles.
+ - A phrase is a string that consists of lowercase English letters and spaces only.
+ - No space appears in the start or the end of a phrase. There are no consecutive spaces in a phrase.
+ - Before and After puzzles are phrases that are formed by merging two phrases where the **last word of the first phrase** is the same as the **first word of the second phrase**.
+ - Return the Before and After puzzles that can be formed by every two phrases phrases[i] and phrases[j] where i != j. Note that the order of matching two phrases matters, we want to consider both orders.
+ - You should return a list of **distinct** strings sorted **lexicographically**.
+ - Constriants
+    - 1 <= phrases.length <= 100
+    - 1 <= phrases[i].length <= 100
+ - **Example:**
+    ```python
+    Input: phrases = ["writing code","code rocks"]
+    Output: ["writing code rocks"]
+
+    Input: phrases = ["mission statement",
+                  "a quick bite to eat",
+                  "a chip off the old block",
+                  "chocolate bar",
+                  "mission impossible",
+                  "a man on a mission",
+                  "block party",
+                  "eat my words",
+                  "bar of soap"]
+    Output: ["a chip off the old block party",
+             "a man on a mission impossible",
+             "a man on a mission statement",
+             "a quick bite to eat my words",
+             "chocolate bar of soap"]
+
+    Input: phrases = ["a","b","a"]
+    Output: ["a"]
+    ```
+ - [bef&aftPuzzle](https://github.com/tristaaa/lcproblems/blob/master/befandaftpuzzle.py)
+
+
