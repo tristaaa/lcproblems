@@ -869,6 +869,44 @@
  - [hindex](https://github.com/tristaaa/lcproblems/blob/master/hindex.py)
 
 ### 16.1 Shortest Word Distance lc243
+ - Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+ - **Example:**
+    ```python
+    Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+    Given word1 = "coding", word2 = "practice", return 3.
+    Given word1 = "makes", word2 = "coding", return 1.
+    ```
+ - Note: You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+ - [shortestWordDis](https://github.com/tristaaa/lcproblems/blob/master/shortestworddis.py)
+
+### 16.2 Shortest Word Distance II lc244
+ - This is a follow up of Shortest Word Distance(243). The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?
+ - Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list.
+ - **Example:**
+    ```python
+    Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+    Given word1 = "coding", word2 = "practice", return 3.
+    Given word1 = "makes", word2 = "coding", return 1.
+    ```
+ - Note: You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+ - [shortestWordDisII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisii.py)
+
+### 16.3 Shortest Word Distance III lc245
+ - This is a follow up of Shortest Word Distance. The only difference is now word1 could be the same as word2.
+ - Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+ - Note: 
+    - word1 and word2 may be the same and they represent two individual words in the list.
+    - You may assume that word1 and word2 are both in the list.
+ - **Example:**
+    ```python
+    Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+    Given word1 = "makes", word2 = "coding", return 1.
+    Given word1 = "makes", word2 = "makes", return 3.
+    ```
+ - [shortestWordDisIII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisiii.py)
 
 
 ### 17. Before and After Puzzle lc1181
