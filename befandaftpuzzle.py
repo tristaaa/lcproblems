@@ -17,13 +17,13 @@ class Solution:
         for i in range(len(phrases)):
             words = phrases[i].split(' ')
             joinword[i] = (words[0],words[-1])
-            
+
         for i in range(len(phrases)):
             for k,v in joinword.items():
                 if k!=i and v[0]==joinword[i][1]:
                     ret.append(phrases[i] + phrases[k][len(v[0]):])
 
-        return sorted(ret)
+        return sorted(set(ret))
 
 
 sol = Solution()
