@@ -11,19 +11,37 @@ class Solution:
             :type phrases: List[str]
             :rtype: List[str]
         """
-        ret=[]
-        # a dict to store the head and tail word of each phrase
-        joinword = {}
-        for i in range(len(phrases)):
-            words = phrases[i].split(' ')
-            joinword[i] = (words[0],words[-1])
+        # ret=[]
+        # # a dict to store the head and tail word of each phrase
+        # joinword = {}
+        # for i in range(len(phrases)):
+        #     words = phrases[i].split()
+        #     joinword[i] = (words[0],words[-1])
 
-        for i in range(len(phrases)):
-            for k,v in joinword.items():
-                if k!=i and v[0]==joinword[i][1]:
-                    ret.append(phrases[i] + phrases[k][len(v[0]):])
+        # for i in range(len(phrases)):
+        #     for k,v in joinword.items():
+        #         if k!=i and v[0]==joinword[i][1]:
+        #             ret.append(phrases[i] + phrases[k][len(v[0]):])
 
-        return sorted(set(ret))
+        # return sorted(set(ret))
+
+        P, F, A = [], {}, set()
+        for i in phrases: P.append(i.split())
+
+        for i,j in enumerate(P):
+            a = j[0]
+            if a in F: F[a].append(i)
+            else: F[a] = [i]
+
+        print(P)
+
+        for i,j in enumerate(P):
+            b = j[-1]
+            if b not in F: continue
+            for k in F[b]:
+                if i == k: continue
+                A.add(" ".join(j + P[k][1:]))
+        return sorted(A)
 
 
 sol = Solution()
