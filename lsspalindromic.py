@@ -61,7 +61,7 @@ class Solution:
         p=[0]*length
         for i in range(length):
             # 1) when i>=rmost,we cannot infer more info, so just set pi=1 and do latter job
-            # set j=2*mid-1, so i,j is symmetric wrt mid
+            # set j=2*mid-i, so i,j is symmetric wrt mid
             # 2) if rmost-i>p[j], the palindromic string centered in j must be a substring of palindromic string centered in mid
             # and because of the symetric position of i,j, we know that p[i]==p[j]
             # 3) if rmost-i<=p[j], we only know for sure that
