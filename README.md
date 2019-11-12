@@ -51,22 +51,29 @@
 [| Subsequence problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-subsequence-problems)<br>
 &ensp;&ensp;[- Longest Palindromic Subsequence](https://github.com/tristaaa/lcproblems/blob/master/README.md#61-longest-palindromic-subsequence)<br>
 [| Uncategorized problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-uncategorized-problems)<br>
-&ensp;&ensp;[- Find Median Sorted Arrays lc4](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays-lc4)<br>
-&ensp;&ensp;[- Reverse Integer lc7](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer-lc7)<br>
-&ensp;&ensp;[- String to Integer(atoi) lc8](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi-lc8)<br>
-&ensp;&ensp;[- Remove Elements lc27](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements-lc27)<br>
-&ensp;&ensp;[- Remove Duplicates from Sorted Array lc26](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-remove-duplicates-from-sorted-array-lc26)<br>
-&ensp;&ensp;[- Remove Duplicates from Sorted Array II lc80](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-remove-duplicates-from-sorted-array-ii-lc80)<br>
-&ensp;&ensp;[- Number of Dice Rolls With Target Sum lc1155](https://github.com/tristaaa/lcproblems/blob/master/README.md#6-number-of-dice-rolls-with-target-sum-lc1155)<br>
-&ensp;&ensp;[- Find the Celebrity lc277](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity-lc277)<br>
-&ensp;&ensp;[- Rotate Array lc189](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array-lc189)<br>
-&ensp;&ensp;[- First Missing Positive lc41](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive-lc41)<br>
-&ensp;&ensp;[- Bulls and Cows lc299](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows-lc299)<br>
-&ensp;&ensp;[- Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
-&ensp;&ensp;[- Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#12-pascals-triangle-lc118)<br>
-&ensp;&ensp;[- Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#13-pascals-triangle-ii-lc119)<br>
-&ensp;&ensp;[- Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
-&ensp;&ensp;[- H-index lc274](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
+&ensp;&ensp;[- 1. Find Median Sorted Arrays lc4](https://github.com/tristaaa/lcproblems/blob/master/README.md#1-find-median-sorted-arrays-lc4)<br>
+&ensp;&ensp;[- 2. Reverse Integer lc7](https://github.com/tristaaa/lcproblems/blob/master/README.md#2-reverse-integer-lc7)<br>
+&ensp;&ensp;[- 3. String to Integer(atoi) lc8](https://github.com/tristaaa/lcproblems/blob/master/README.md#3-string-to-integeratoi-lc8)<br>
+&ensp;&ensp;[- 4. Remove Elements lc27](https://github.com/tristaaa/lcproblems/blob/master/README.md#4-remove-elements-lc27)<br>
+&ensp;&ensp;[- 5.1 Remove Duplicates from Sorted Array lc26](https://github.com/tristaaa/lcproblems/blob/master/README.md#51-remove-duplicates-from-sorted-array-lc26)<br>
+&ensp;&ensp;[- 5.2 Remove Duplicates from Sorted Array II lc80](https://github.com/tristaaa/lcproblems/blob/master/README.md#52-remove-duplicates-from-sorted-array-ii-lc80)<br>
+&ensp;&ensp;[- 6. Number of Dice Rolls With Target Sum lc1155](https://github.com/tristaaa/lcproblems/blob/master/README.md#6-number-of-dice-rolls-with-target-sum-lc1155)<br>
+&ensp;&ensp;[- 7. Find the Celebrity lc277](https://github.com/tristaaa/lcproblems/blob/master/README.md#7-find-the-celebrity-lc277)<br>
+&ensp;&ensp;[- 8. Rotate Array lc189](https://github.com/tristaaa/lcproblems/blob/master/README.md#8-rotate-array-lc189)<br>
+&ensp;&ensp;[- 9. First Missing Positive lc41](https://github.com/tristaaa/lcproblems/blob/master/README.md#9-first-missing-positive-lc41)<br>
+&ensp;&ensp;[- 10. Bulls and Cows lc299](https://github.com/tristaaa/lcproblems/blob/master/README.md#10-bulls-and-cows-lc299)<br>
+&ensp;&ensp;[- 11. Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
+&ensp;&ensp;[- 12.2 Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#121-pascals-triangle-lc118)<br>
+&ensp;&ensp;[- 12.2 Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#122-pascals-triangle-ii-lc119)<br>
+&ensp;&ensp;[- 13 Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#122-pascals-triangle-ii-lc119)<br>
+&ensp;&ensp;[- 14. Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
+&ensp;&ensp;[- 15. H-index lc274](https://github.com/tristaaa/lcproblems#15-h-index-lc274)<br>
+&ensp;&ensp;[- 16.1 Shortest Word Distance lc243](https://github.com/tristaaa/lcproblems#161-shortest-word-distance-lc243)<br>
+&ensp;&ensp;[- 16.2 Shortest Word Distance II lc244](https://github.com/tristaaa/lcproblems#162-shortest-word-distance-ii-lc244)<br>
+&ensp;&ensp;[- 16.3 Shortest Word Distance III lc245](https://github.com/tristaaa/lcproblems#163-shortest-word-distance-iii-lc245)<br>
+&ensp;&ensp;[- 17. Before and After Puzzle lc1181](https://github.com/tristaaa/lcproblems#17-before-and-after-puzzle-lc1181)<br>
+&ensp;&ensp;[- 18.1 Contains Duplicate lc217](https://github.com/tristaaa/lcproblems#181-contains-duplicate-lc217)<br>
+&ensp;&ensp;[- 18.2 Contains Duplicate II lc219](https://github.com/tristaaa/lcproblems#182-contains-duplicate-ii-lc219)<br>
 
 ---
 
@@ -391,7 +398,7 @@
     ```
  - [longestPalindromicSubstr](https://github.com/tristaaa/lcproblems/blob/master/lsspalindromic.py)
 
- #### -longest substring w/ at least k repeating chars
+#### -longest substring w/ at least k repeating chars
   - Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
   - **Example:**
     ```python
@@ -793,7 +800,7 @@
     ```
  - [gasstation](https://github.com/tristaaa/lcproblems/blob/master/gasstation.py)
 
-### 12. Pascal's Triangle lc118
+### 12.1 Pascal's Triangle lc118
  - easy
  - Given a non-negative integer `numRows`, generate the first `numRows` of Pascal's triangle.
  - In Pascal's triangle, each number is the sum of the two numbers directly above it.
@@ -811,7 +818,7 @@
     ```
  - [pascaltriangle](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangle.py)
 
-### 13. Pascal's Triangle II lc119
+### 12.2 Pascal's Triangle II lc119
  - easy
  - Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
  - Note that the row index starts from 0.
@@ -830,6 +837,22 @@
     ]
     ```
  - [pascaltriangleii](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangleii.py)
+
+
+### 13. Find Words That Can Be Formed by Characters lc1160
+ - easy
+ - You are given an array of strings `words` and a string `chars`.
+ - A string is good if it can be formed by characters from `chars` (each character can only be used once).
+ - Return the sum of lengths of all good strings in `words`.
+ - **Example:**
+    ```python
+    Input: words = ["cat","bt","hat","tree"], chars = "atach"
+    Output: 6
+    Explanation: 
+    The strings that can be formed are "cat" and "hat" so the answer is 3 + 3 = 6.
+    ```
+ - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
+
 
 ### 14. Find Words That Can Be Formed by Characters lc1160
  - easy
@@ -908,7 +931,6 @@
     ```
  - [shortestWordDisIII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisiii.py)
 
-
 ### 17. Before and After Puzzle lc1181
  - median
  - Given a list of `phrases`, generate a list of Before and After puzzles.
@@ -946,3 +968,46 @@
  - [bef&aftPuzzle](https://github.com/tristaaa/lcproblems/blob/master/befandaftpuzzle.py)
 
 
+### 18.1 Contains Duplicate lc217
+ - Easy
+ - Given an array of integers, find if the array contains any duplicates.
+ - Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+ - **Example:**
+    ```python
+    Input: [1,1,1,3,3,4,3,2,4,2]
+    Output: True
+    ```
+ - [containDup](https://github.com/tristaaa/lcproblems/blob/master/containdup.py)
+
+### 18.2 Contains Duplicate II lc219
+ - Easy
+ - Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the **absolute** difference between i and j is at most k.
+ - **Example:**
+    ```python
+    Input: nums = [1,2,3,1], k = 3
+    Output: True
+
+    Input: nums = [1,2,3,1,2,3], k = 2
+    Output: False
+    ```
+ - [containDupii](https://github.com/tristaaa/lcproblems/blob/master/containdupii.py)
+
+### 18.3 Contains Duplicate III lc219
+ - Median
+ - Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.
+ - **Example:**
+    ```python
+    Input: nums = [1,2,3,1], k = 3, t = 0
+    Output: True
+
+    Input: nums = [1,0,1,1], k = 1, t = 2
+    Output: True
+
+    Input: nums = [1,5,9,1,5,9], k = 2, t = 3
+    Output: False
+    ```
+ - [containDupiii](https://github.com/tristaaa/lcproblems/blob/master/containdupiii.py)
+
+
+
+[**Back To Top**](https://github.com/tristaaa/lcproblems#leetcode-problems)
