@@ -65,7 +65,7 @@
 &ensp;&ensp;[- 11. Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
 &ensp;&ensp;[- 12.2 Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#121-pascals-triangle-lc118)<br>
 &ensp;&ensp;[- 12.2 Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#122-pascals-triangle-ii-lc119)<br>
-&ensp;&ensp;[- 13 Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#122-pascals-triangle-ii-lc119)<br>
+&ensp;&ensp;[- 13 13. Binary Tree Preorder Traversal lc144](https://github.com/tristaaa/lcproblems#13-binary-tree-preorder-lc144)<br>
 &ensp;&ensp;[- 14. Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
 &ensp;&ensp;[- 15. H-index lc274](https://github.com/tristaaa/lcproblems#15-h-index-lc274)<br>
 &ensp;&ensp;[- 16.1 Shortest Word Distance lc243](https://github.com/tristaaa/lcproblems#161-shortest-word-distance-lc243)<br>
@@ -839,19 +839,21 @@
  - [pascaltriangleii](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangleii.py)
 
 
-### 13. Find Words That Can Be Formed by Characters lc1160
- - easy
- - You are given an array of strings `words` and a string `chars`.
- - A string is good if it can be formed by characters from `chars` (each character can only be used once).
- - Return the sum of lengths of all good strings in `words`.
+### 13. Binary Tree Preorder Traversal lc144
+ - medium
+ - Given a binary tree, return the preorder traversal of its nodes' values..
  - **Example:**
     ```python
-    Input: words = ["cat","bt","hat","tree"], chars = "atach"
-    Output: 6
-    Explanation: 
-    The strings that can be formed are "cat" and "hat" so the answer is 3 + 3 = 6.
+    Input: [1,null,2,3]
+       1
+        \
+         2
+        /
+       3
+
+    Output: [1,2,3]
     ```
- - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
+ - [preorderTraversal](https://github.com/tristaaa/lcproblems/blob/master/preordertraversal.py)
 
 
 ### 14. Find Words That Can Be Formed by Characters lc1160
