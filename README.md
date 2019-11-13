@@ -65,7 +65,7 @@
 &ensp;&ensp;[- 11. Gas Station lc134](https://github.com/tristaaa/lcproblems/blob/master/README.md#11-gas-station-lc134)<br>
 &ensp;&ensp;[- 12.2 Pascal's Triangle lc118](https://github.com/tristaaa/lcproblems#121-pascals-triangle-lc118)<br>
 &ensp;&ensp;[- 12.2 Pascal's Triangle II lc119](https://github.com/tristaaa/lcproblems#122-pascals-triangle-ii-lc119)<br>
-&ensp;&ensp;[- 13 13. Binary Tree Preorder Traversal lc144](https://github.com/tristaaa/lcproblems#13-binary-tree-preorder-lc144)<br>
+&ensp;&ensp;[- 13. Binary Tree Preorder Traversal lc144](https://github.com/tristaaa/lcproblems#13-binary-tree-preorder-lc144)<br>
 &ensp;&ensp;[- 14. Find Words That Can Be Formed By Characters lc1160](https://github.com/tristaaa/lcproblems#14-find-words-that-can-be-formed-by-characters-lc1160)<br>
 &ensp;&ensp;[- 15. H-index lc274](https://github.com/tristaaa/lcproblems#15-h-index-lc274)<br>
 &ensp;&ensp;[- 16.1 Shortest Word Distance lc243](https://github.com/tristaaa/lcproblems#161-shortest-word-distance-lc243)<br>
@@ -74,6 +74,7 @@
 &ensp;&ensp;[- 17. Before and After Puzzle lc1181](https://github.com/tristaaa/lcproblems#17-before-and-after-puzzle-lc1181)<br>
 &ensp;&ensp;[- 18.1 Contains Duplicate lc217](https://github.com/tristaaa/lcproblems#181-contains-duplicate-lc217)<br>
 &ensp;&ensp;[- 18.2 Contains Duplicate II lc219](https://github.com/tristaaa/lcproblems#182-contains-duplicate-ii-lc219)<br>
+&ensp;&ensp;[- 18.3 Contains Duplicate III lc220](https://github.com/tristaaa/lcproblems#183-contains-duplicate-iii-lc220)<br>
 
 ---
 
@@ -994,7 +995,7 @@
     ```
  - [containDupii](https://github.com/tristaaa/lcproblems/blob/master/containdupii.py)
 
-### 18.3 Contains Duplicate III lc219
+### 18.3 Contains Duplicate III lc220
  - Median
  - Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.
  - **Example:**
