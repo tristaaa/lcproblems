@@ -75,6 +75,25 @@
 &ensp;&ensp;[- 18.1 Contains Duplicate lc217](https://github.com/tristaaa/lcproblems#181-contains-duplicate-lc217)<br>
 &ensp;&ensp;[- 18.2 Contains Duplicate II lc219](https://github.com/tristaaa/lcproblems#182-contains-duplicate-ii-lc219)<br>
 &ensp;&ensp;[- 18.3 Contains Duplicate III lc220](https://github.com/tristaaa/lcproblems#183-contains-duplicate-iii-lc220)<br>
+&ensp;&ensp;[- 19. Surrounded Regions lc130](https://github.com/tristaaa/lcproblems#19-surrounded-regions-lc130)<br>
+&ensp;&ensp;[- 20.1 Kth Largest Element in a Stream lc703](https://github.com/tristaaa/lcproblems#201-kth-largest-element-in-a-stream-lc703)<br>
+&ensp;&ensp;[- 20.2 Kth Largest Element in an Array lc215](https://github.com/tristaaa/lcproblems#202-kth-largest-element-in-an-array-lc215)<br>
+&ensp;&ensp;[- 21. Third Maximum Number lc414](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 22.1 Max Consecutive Ones lc485](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 22.2 Max Consecutive Ones II lc487](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 22.3 Max Consecutive Ones III lc1004](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 23. Find All Anagrams in a String lc438](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 24.1 Minimum Window Substring lc76](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 24.2 Minimum Window Subsequence lc727](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 25.1 Sliding Window Maximum lc239](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 25.2 Sliding Window Median lc480](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 26.1 Min Stack lc155](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 26.2 Max Stack lc716](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 27. 01 Matrix lc542](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 28. Shortest Bridge lc934](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 29.1 The Maze lc490](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 29.2 The Maze II lc505](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 29.3 The Maze III lc499](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
 
 ---
 
@@ -1032,6 +1051,61 @@
     Explanation: Surrounded regions shouldn’t be on the border, which means that any 'O' on the border of the board are not flipped to 'X'. Any 'O' that is not on the border and it is not connected to an 'O' on the border will be flipped to 'X'. Two cells are connected if they are adjacent cells connected horizontally or vertically.
     ```
  - [surroundedregion](https://github.com/tristaaa/lcproblems/blob/master/surroundedregion.py)
+
+### 20.1 Kth Largest Element in a Stream lc703
+ - easy
+
+### 20.2 Kth Largest Element in an Array lc215
+ - medium
+
+### 21. Third Maximum Number lc414
+ - easy
+
+### 22.1 Max Consecutive Ones lc485
+ - easy
+
+### 22.2 Max Consecutive Ones II lc487
+ - medium
+
+### 22.3 Max Consecutive Ones III lc1004
+ - medium
+
+### 23. Find All Anagrams in a String lc438
+ - medium
+
+### 24.1 Minimum Window Substring lc76
+ - hard
+
+### 24.2 Minimum Window Subsequence lc727
+ - hard
+
+### 25.1 Sliding Window Maximum lc239
+ - hard
+
+### 25.2 Sliding Window Median lc480
+ - hard
+
+### 26.1 Min Stack lc155
+ - easy
+
+### 26.2 Max Stack lc716
+ - easy
+
+### 27. 01 Matrix lc542
+ - medium
+
+### 28. Shortest Bridge lc934
+ - medium
+
+### 29.1 The Maze lc490
+ - medium
+
+### 29.1 The Maze II lc505
+ - medium
+
+### 29.1 The Maze III lc499
+ - hard
+
 
 
 [**Back To Top**](https://github.com/tristaaa/lcproblems#leetcode-problems)
