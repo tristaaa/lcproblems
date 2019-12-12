@@ -14,7 +14,7 @@
 &ensp;&ensp;&ensp;&ensp;[- four sum (basic)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-four-sum-basic)<br>
 &ensp;&ensp;&ensp;&ensp;[- four sum count](https://github.com/tristaaa/lcproblems/blob/master/README.md#-four-sum-count)<br>
 [| Stack problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-stack-problems)<br>
-&ensp;&ensp;[- Binary Search Tree Iterator](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator)<br>
+&ensp;&ensp;[- Binary Search Tree Iterator lc173](https://github.com/tristaaa/lcproblems/blob/master/README.md#21-binary-search-tree-iterator-lc173)<br>
 [| Add problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-problems)<br>
 &ensp;&ensp;[- Add Two Numbers](https://github.com/tristaaa/lcproblems/blob/master/README.md#31-add-two-numbers)<br>
 &ensp;&ensp;&ensp;&ensp;[- add two number (reversed linked list)](https://github.com/tristaaa/lcproblems/blob/master/README.md#-add-two-number-reversed-linked-list)<br>
@@ -27,6 +27,7 @@
 [| Substring problems](https://github.com/tristaaa/lcproblems/blob/master/README.md#-substring-problems)<br>
 &ensp;&ensp;[- Repeated Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#41-repeated-substring)<br>
 &ensp;&ensp;[- Longest Substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#42-longest-substring)<br>
+&ensp;&ensp;[- longest Duplicate Substring lc1044](https://github.com/tristaaa/lcproblems/blob/master/README.md#longest-duplicate-substring-lc1044)<br>
 &ensp;&ensp;&ensp;&ensp;[- longest substring w/o repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-wo-repeating-chars)<br>
 &ensp;&ensp;&ensp;&ensp;[- longest palindromic substring](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-palindromic-substring)<br>
 &ensp;&ensp;&ensp;&ensp;[- longest substring w/ at least k repeating chars](https://github.com/tristaaa/lcproblems/blob/master/README.md#-longest-substring-w-at-least-k-repeating-chars)<br>
@@ -79,21 +80,22 @@
 &ensp;&ensp;[- 20.1 Kth Largest Element in a Stream lc703](https://github.com/tristaaa/lcproblems#201-kth-largest-element-in-a-stream-lc703)<br>
 &ensp;&ensp;[- 20.2 Kth Largest Element in an Array lc215](https://github.com/tristaaa/lcproblems#202-kth-largest-element-in-an-array-lc215)<br>
 &ensp;&ensp;[- 21. Third Maximum Number lc414](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 22.1 Max Consecutive Ones lc485](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 22.2 Max Consecutive Ones II lc487](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 22.3 Max Consecutive Ones III lc1004](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 23. Find All Anagrams in a String lc438](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 24.1 Minimum Window Substring lc76](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 24.2 Minimum Window Subsequence lc727](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 25.1 Sliding Window Maximum lc239](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 25.2 Sliding Window Median lc480](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 26.1 Min Stack lc155](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 26.2 Max Stack lc716](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 27. 01 Matrix lc542](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 28. Shortest Bridge lc934](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 29.1 The Maze lc490](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 29.2 The Maze II lc505](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
-&ensp;&ensp;[- 29.3 The Maze III lc499](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
+&ensp;&ensp;[- 22.1 Max Consecutive Ones lc485](https://github.com/tristaaa/lcproblems#221-max-consecutive-ones-lc485)<br>
+&ensp;&ensp;[- 22.2 Max Consecutive Ones II lc487](https://github.com/tristaaa/lcproblems#222-max-consecutive-ones-ii-lc487)<br>
+&ensp;&ensp;[- 22.3 Max Consecutive Ones III lc1004](https://github.com/tristaaa/lcproblems#223-max-consecutive-ones-iii-lc1004)<br>
+&ensp;&ensp;[- 23. Find All Anagrams in a String lc438](https://github.com/tristaaa/lcproblems#23-find-all-anagrams-in-a-string-lc438)<br>
+&ensp;&ensp;[- 24.1 Minimum Window Substring lc76](https://github.com/tristaaa/lcproblems#241-minimum-window-substring-lc76)<br>
+&ensp;&ensp;[- 24.2 Minimum Window Subsequence lc727](https://github.com/tristaaa/lcproblems#242-minimum-window-subsequence-lc727)<br>
+&ensp;&ensp;[- 25.1 Sliding Window Maximum lc239](https://github.com/tristaaa/lcproblems#251-sliding-window-maximum-lc239)<br>
+&ensp;&ensp;[- 25.2 Sliding Window Median lc480](https://github.com/tristaaa/lcproblems#252-sliding-window-median-lc480)<br>
+&ensp;&ensp;[- 26.1 Min Stack lc155](https://github.com/tristaaa/lcproblems#261-min-stack-lc155)<br>
+&ensp;&ensp;[- 26.2 Max Stack lc716](https://github.com/tristaaa/lcproblems#262-max-stack-lc716)<br>
+&ensp;&ensp;[- 27. 01 Matrix lc542](https://github.com/tristaaa/lcproblems#27-01-matrix-lc542)<br>
+&ensp;&ensp;[- 28. Shortest Bridge lc934](https://github.com/tristaaa/lcproblems#28-shortest-bridge-lc934)<br>
+&ensp;&ensp;[- 29.1 The Maze lc490](https://github.com/tristaaa/lcproblems#291-the-maze-lc490)<br>
+&ensp;&ensp;[- 29.2 The Maze II lc505](https://github.com/tristaaa/lcproblems#291-the-maze-ii-lc505)<br>
+&ensp;&ensp;[- 29.3 The Maze III lc499](https://github.com/tristaaa/lcproblems#291-the-maze-iii-lc499)<br>
+&ensp;&ensp;[- 30. Serialize and Deserialize Binary Tree lc297](https://github.com/tristaaa/lcproblems#30-serialize-and-deserialize-binary-tree-lc297)<br>
 
 ---
 
@@ -242,7 +244,9 @@
 
 
 ## | Stack problems
-### 2.1 Binary Search Tree Iterator
+### 2.1 Binary Search Tree Iterator lc173
+ - (link)[https://leetcode.com/problems/binary-search-tree-iterator]
+ - medium
  - Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
  - Calling `next()` will return the next smallest number in the BST.
  - Note: 
@@ -390,6 +394,24 @@
 
 
 ### 4.2 Longest Substring
+#### -longest substring w/o repeating chars
+ - (link)[https://leetcode.com/problems/longest-duplicate-substring/]
+ - hard
+ - Given a string `S`, consider all duplicated substrings: (contiguous) substrings of `S` that occur 2 or more times.  (The occurrences may overlap.)
+ - Return **any** duplicated substring that has the longest possible length.  (If `S` does not have a duplicated substring, the answer is "".)
+ - Note:
+    - 2 <= `S.length` <= 10^5
+    - `S` consists of lowercase English letters.
+ - **Example:**
+    ```python
+    Input: "banana"
+    Output: "ana"
+
+    Input: "abcd"
+    Output: ""
+    ```
+ - [longestDupSubstr](https://github.com/tristaaa/lcproblems/blob/master/ldupsubstr.py)
+
 #### -longest substring w/o repeating chars
  - Given a string, find the length of the longest substring without repeating characters.
  - **Example:**
@@ -685,34 +707,42 @@
 
 ## | Uncategorized problems
 ### 1. Median of Two Sorted Arrays lc4
+ - [link](https://leetcode.com/problems/median-of-two-sorted-arrays/)
  - hard
  - [medianSortedArr](https://github.com/tristaaa/lcproblems/blob/master/mediansortedarr.py)
 
 ### 2. Reverse Integer lc7
+ - [link](https://leetcode.com/problems/reverse-integer/)
  - easy
  - [reverseInt](https://github.com/tristaaa/lcproblems/blob/master/reverseint.py)
 
 ### 3. String to Integer(atoi) lc8
+ - [link](https://leetcode.com/problems/string-to-integer-atoi/)
  - mediun
  - [str2int(atoi)](https://github.com/tristaaa/lcproblems/blob/master/str2int_atoi.py)
 
 ### 4. Remove Elements lc27
+ - [link](https://leetcode.com/problems/remove-element/)
  - easy
  - [removeelement](https://github.com/tristaaa/lcproblems/blob/master/removeelement.py)
 
 ### 5.1 Remove Duplicates from Sorted Array lc26
+ - [link](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
  - easy
  - [removeduplicates](https://github.com/tristaaa/lcproblems/blob/master/removedup.py)
 
 ### 5.2 Remove Duplicates from Sorted Array II lc80
+ - [link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
  - mediun
  - [removeduplicatesii](https://github.com/tristaaa/lcproblems/blob/master/removedupii.py)
 
 ### 6. Number of Dice Rolls With Target Sum lc1155
+ - [link](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum)
  - medium
  - [dicerollswtargetsum](https://github.com/tristaaa/lcproblems/blob/master/dicerollswtargetsum.py)
 
 ### 7. Find the Celebrity lc277
+ - [link](https://leetcode.com/problems/find-the-celebrity)
  - medium
  - Suppose you are at a party with n people (labeled from 0 to n - 1) and among them, there may exist one celebrity. The definition of a celebrity is that all the other n - 1 people know him/her but he/she does not know any of them.
  - Now you want to find out who the celebrity is or verify that there is not one. The only thing you are allowed to do is to ask questions like: "Hi, A. Do you know B?" to get information of whether A knows B. You need to find out the celebrity (or verify there is not one) by asking as few questions as possible (in the asymptotic sense).
@@ -734,11 +764,13 @@
  - [findcelebrity](https://github.com/tristaaa/lcproblems/blob/master/findcelebrity.py)
 
 ### 8. Rotate Array lc189
+ - [link](https://leetcode.com/problems/rotate-array)
  - easy
  - Given an array, rotate the array to the right by k steps, where k is non-negative.
  - [rotatearr](https://github.com/tristaaa/lcproblems/blob/master/rotatearr.py)
 
 ### 9. First Missing Positive lc41
+ - [link](https://leetcode.com/problems/first-missing-positive)
  - hard
  - Given an unsorted integer array, find the smallest missing positive integer.
  - Note: Your algorithm should run in O(n) time and uses constant extra space.
@@ -753,6 +785,7 @@
  - [fstmisspos](https://github.com/tristaaa/lcproblems/blob/master/fstmisspos.py)
 
 ### 10. Bulls and Cows lc299
+ - [link](https://leetcode.com/problems/bulls-and-cows)
  - easy
  - You are playing the following Bulls and Cows game with your friend: 
     - You write down a number and ask your friend to guess what the number is. 
@@ -779,6 +812,7 @@
  - [bullandcow](https://github.com/tristaaa/lcproblems/blob/master/bullandcow.py)
 
 ### 11. Gas Station lc134
+ - [link](https://leetcode.com/problems/gas-station)
  - median
  - There are N gas stations along a circular route, where the amount of gas at station i is gas[i].(i begins at 0)
  - You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.
@@ -821,6 +855,7 @@
  - [gasstation](https://github.com/tristaaa/lcproblems/blob/master/gasstation.py)
 
 ### 12.1 Pascal's Triangle lc118
+ - [link](https://leetcode.com/problems/pascals-triangle)
  - easy
  - Given a non-negative integer `numRows`, generate the first `numRows` of Pascal's triangle.
  - In Pascal's triangle, each number is the sum of the two numbers directly above it.
@@ -839,6 +874,7 @@
  - [pascaltriangle](https://github.com/tristaaa/lcproblems/blob/master/pascaltriangle.py)
 
 ### 12.2 Pascal's Triangle II lc119
+ - [link](https://leetcode.com/problems/pascals-triangle-ii)
  - easy
  - Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
  - Note that the row index starts from 0.
@@ -860,6 +896,7 @@
 
 
 ### 13. Binary Tree Preorder Traversal lc144
+ - [link](https://leetcode.com/problems/binary-tree-preorder-traversal)
  - medium
  - Given a binary tree, return the preorder traversal of its nodes' values..
  - **Example:**
@@ -877,6 +914,7 @@
 
 
 ### 14. Find Words That Can Be Formed by Characters lc1160
+ - [link](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters)
  - easy
  - You are given an array of strings words and a string chars.
  - A string is good if it can be formed by characters from chars (each character can only be used once).
@@ -896,6 +934,7 @@
  - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
 
 ### 15. H-index lc274
+ - [link](https://leetcode.com/problems/h-index)
  - median
  - Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
  - According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least h citations each, and the other N − h papers have no more than h citations each."
@@ -914,6 +953,7 @@
  - [hindex](https://github.com/tristaaa/lcproblems/blob/master/hindex.py)
 
 ### 16.1 Shortest Word Distance lc243
+ - [link](https://leetcode.com/problems/shortest-word-distance)
  - Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
  - **Example:**
     ```python
@@ -926,6 +966,7 @@
  - [shortestWordDis](https://github.com/tristaaa/lcproblems/blob/master/shortestworddis.py)
 
 ### 16.2 Shortest Word Distance II lc244
+ - [link](https://leetcode.com/problems/shortest-word-distance-ii)
  - This is a follow up of Shortest Word Distance(243). The only difference is now you are given the list of words and your method will be called repeatedly many times with different parameters. How would you optimize it?
  - Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list.
  - **Example:**
@@ -939,6 +980,7 @@
  - [shortestWordDisII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisii.py)
 
 ### 16.3 Shortest Word Distance III lc245
+ - [link](https://leetcode.com/problems/shortest-word-distance-iii)
  - This is a follow up of Shortest Word Distance. The only difference is now word1 could be the same as word2.
  - Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
  - Note: 
@@ -954,6 +996,7 @@
  - [shortestWordDisIII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisiii.py)
 
 ### 17. Before and After Puzzle lc1181
+ - [link](https://leetcode.com/problems/before-and-after-puzzle)
  - median
  - Given a list of `phrases`, generate a list of Before and After puzzles.
  - A phrase is a string that consists of lowercase English letters and spaces only.
@@ -991,6 +1034,7 @@
 
 
 ### 18.1 Contains Duplicate lc217
+ - [link](https://leetcode.com/problems/contains-duplicate)
  - Easy
  - Given an array of integers, find if the array contains any duplicates.
  - Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
@@ -1002,6 +1046,7 @@
  - [containDup](https://github.com/tristaaa/lcproblems/blob/master/containdup.py)
 
 ### 18.2 Contains Duplicate II lc219
+ - [link](https://leetcode.com/problems/contains-duplicate-ii)
  - Easy
  - Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the **absolute** difference between i and j is at most k.
  - **Example:**
@@ -1015,6 +1060,7 @@
  - [containDupii](https://github.com/tristaaa/lcproblems/blob/master/containdupii.py)
 
 ### 18.3 Contains Duplicate III lc220
+ - [link](https://leetcode.com/problems/contains-duplicate-iii)
  - Median
  - Given an array of integers, find out whether there are two distinct indices i and j in the array such that the absolute difference between nums[i] and nums[j] is at most t and the absolute difference between i and j is at most k.
  - **Example:**
@@ -1031,6 +1077,7 @@
  - [containDupiii](https://github.com/tristaaa/lcproblems/blob/master/containdupiii.py)
 
 ### 19. Surrounded Regions lc130
+ - [link](https://leetcode.com/problems/surrounded-regions)
  - medium
  - Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
  - A region is captured by flipping all 'O's into 'X's in that surrounded region.
@@ -1053,57 +1100,79 @@
  - [surroundedregion](https://github.com/tristaaa/lcproblems/blob/master/surroundedregion.py)
 
 ### 20.1 Kth Largest Element in a Stream lc703
+ - [link](https://leetcode.com/problems/kth-largest-element-in-a-stream)
  - easy
 
 ### 20.2 Kth Largest Element in an Array lc215
+ - [link](https://leetcode.com/problems/kth-largest-element-in-an-array)
  - medium
 
 ### 21. Third Maximum Number lc414
+ - [link](https://leetcode.com/problems/third-maximum-number)
  - easy
 
 ### 22.1 Max Consecutive Ones lc485
+ - [link](https://leetcode.com/problems/max-consecutive-ones)
  - easy
 
 ### 22.2 Max Consecutive Ones II lc487
+ - [link](https://leetcode.com/problems/max-consecutive-ones-ii)
  - medium
 
 ### 22.3 Max Consecutive Ones III lc1004
+ - [link](https://leetcode.com/problems/max-consecutive-ones-iii)
  - medium
 
 ### 23. Find All Anagrams in a String lc438
+ - [link](https://leetcode.com/problems/find-all-anagrams-in-a-string)
  - medium
 
 ### 24.1 Minimum Window Substring lc76
+ - [link](https://leetcode.com/problems/minimum-window-substring)
  - hard
 
 ### 24.2 Minimum Window Subsequence lc727
+ - [link](https://leetcode.com/problems/minimum-window-subsequence)
  - hard
 
 ### 25.1 Sliding Window Maximum lc239
+ - [link](https://leetcode.com/problems/sliding-window-maximum)
  - hard
 
 ### 25.2 Sliding Window Median lc480
+ - [link](https://leetcode.com/problems/sliding-window-median)
  - hard
 
 ### 26.1 Min Stack lc155
+ - [link](https://leetcode.com/problems/min-stack)
  - easy
 
 ### 26.2 Max Stack lc716
+ - [link](https://leetcode.com/problems/max-stack)
  - easy
 
 ### 27. 01 Matrix lc542
+ - [link](https://leetcode.com/problems/01-matrix)
  - medium
 
 ### 28. Shortest Bridge lc934
+ - [link](https://leetcode.com/problems/shortest-bridge)
  - medium
 
 ### 29.1 The Maze lc490
+ - [link](https://leetcode.com/problems/the-maze)
  - medium
 
 ### 29.1 The Maze II lc505
+ - [link](https://leetcode.com/problems/the-maze-ii)
  - medium
 
 ### 29.1 The Maze III lc499
+ - [link](https://leetcode.com/problems/the-maze-iii)
+ - hard
+
+### 30. Serialize and Deserialize Binary Tree lc297
+ - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
  - hard
 
 
