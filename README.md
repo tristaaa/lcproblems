@@ -82,7 +82,6 @@
 &ensp;&ensp;[- 21. Third Maximum Number lc414](https://github.com/tristaaa/lcproblems#21-third-maximum-number-lc414)<br>
 &ensp;&ensp;[- 22.1 Max Consecutive Ones lc485](https://github.com/tristaaa/lcproblems#221-max-consecutive-ones-lc485)<br>
 &ensp;&ensp;[- 22.2 Max Consecutive Ones II lc487](https://github.com/tristaaa/lcproblems#222-max-consecutive-ones-ii-lc487)<br>
-&ensp;&ensp;[- 22.3 Max Consecutive Ones III lc1004](https://github.com/tristaaa/lcproblems#223-max-consecutive-ones-iii-lc1004)<br>
 &ensp;&ensp;[- 23. Find All Anagrams in a String lc438](https://github.com/tristaaa/lcproblems#23-find-all-anagrams-in-a-string-lc438)<br>
 &ensp;&ensp;[- 24.1 Minimum Window Substring lc76](https://github.com/tristaaa/lcproblems#241-minimum-window-substring-lc76)<br>
 &ensp;&ensp;[- 24.2 Minimum Window Subsequence lc727](https://github.com/tristaaa/lcproblems#242-minimum-window-subsequence-lc727)<br>
@@ -934,6 +933,7 @@
     ```
  - [goodstring](https://github.com/tristaaa/lcproblems/blob/master/goodstring.py)
 
+
 ### 15. H-index lc274
  - [link](https://leetcode.com/problems/h-index)
  - median
@@ -952,6 +952,7 @@
         Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations each, her h-index is 3.
     ```
  - [hindex](https://github.com/tristaaa/lcproblems/blob/master/hindex.py)
+
 
 ### 16.1 Shortest Word Distance lc243
  - [link](https://leetcode.com/problems/shortest-word-distance)
@@ -995,6 +996,7 @@
     Given word1 = "makes", word2 = "makes", return 3.
     ```
  - [shortestWordDisIII](https://github.com/tristaaa/lcproblems/blob/master/shortestworddisiii.py)
+
 
 ### 17. Before and After Puzzle lc1181
  - [link](https://leetcode.com/problems/before-and-after-puzzle)
@@ -1046,6 +1048,7 @@
     ```
  - [containDup](https://github.com/tristaaa/lcproblems/blob/master/containdup.py)
 
+
 ### 18.2 Contains Duplicate II lc219
  - [link](https://leetcode.com/problems/contains-duplicate-ii)
  - Easy
@@ -1059,6 +1062,7 @@
     Output: False
     ```
  - [containDupii](https://github.com/tristaaa/lcproblems/blob/master/containdupii.py)
+
 
 ### 18.3 Contains Duplicate III lc220
  - [link](https://leetcode.com/problems/contains-duplicate-iii)
@@ -1076,6 +1080,7 @@
     Output: False
     ```
  - [containDupiii](https://github.com/tristaaa/lcproblems/blob/master/containdupiii.py)
+
 
 ### 19. Surrounded Regions lc130
  - [link](https://leetcode.com/problems/surrounded-regions)
@@ -1100,29 +1105,239 @@
     ```
  - [surroundedregion](https://github.com/tristaaa/lcproblems/blob/master/surroundedregion.py)
 
+
 ### 20.1 Kth Largest Element in a Stream lc703
  - [link](https://leetcode.com/problems/kth-largest-element-in-a-stream)
  - easy
+ - Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+ - Your KthLargest class will have a constructor which accepts an integer k and an integer array nums, which contains initial elements from the stream. For each call to the method KthLargest.add, return the element representing the kth largest element in the stream.
+ - Note: You may assume that nums' length ≥ k-1 and k ≥ 1.
+ - **Example:**
+    ```python
+    int k = 3;
+    int[] arr = [4,5,8,2];
+    KthLargest kthLargest = new KthLargest(3, arr);
+    kthLargest.add(3);   // returns 4
+    kthLargest.add(5);   // returns 5
+    kthLargest.add(10);  // returns 5
+    kthLargest.add(9);   // returns 8
+    kthLargest.add(4);   // returns 8
+    ```
+ - [KthLargest]
+    ```java
+    class KthLargest {
+        private int k;
+        private Queue<Integer> q;
+
+        public KthLargest(int k, int[] nums) {
+            this.k = k;
+            q = new PriorityQueue<Integer>();
+            for (int i = 0; i < nums.length; i++) {
+                add(nums[i]);
+            }
+        }
+        
+        public int add(int val) {
+            if (q.size() < this.k)
+                q.offer(val);
+            else {
+                int curr = q.poll();
+                if (val>curr)
+                    curr = val;
+                q.offer(curr);
+            }
+            return q.peek();
+        }
+    }
+    /**
+     * Your KthLargest object will be instantiated and called as such:
+     * KthLargest obj = new KthLargest(k, nums);
+     * int param_1 = obj.add(val);
+     */
+    ```
+
 
 ### 20.2 Kth Largest Element in an Array lc215
  - [link](https://leetcode.com/problems/kth-largest-element-in-an-array)
  - medium
+ - Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+ - Note: You may assume k is always valid, 1 ≤ k ≤ array's length.
+ - **Example:**
+    ```python
+    Input: [3,2,1,5,6,4] and k = 2
+    Output: 5
+
+    Input: [3,2,3,1,2,4,5,5,6] and k = 4
+    Output: 4
+    ```
+ - [findKthLargest]
+    ```java
+    class Solution {
+        public int findKthLargest(int[] nums, int k) {
+            Queue<Integer> minHeap = new PriorityQueue<Integer>();
+            // maintain a min-heap of size k, where the first element is the kth largest element in the array `nums`
+            for (int num : nums){
+                if (minHeap.size()<k){
+                    minHeap.offer(num);
+                }else if(minHeap.peek()<num){
+                    minHeap.poll();
+                    minHeap.offer(num);
+                }
+            }
+            
+            return minHeap.peek();
+        }
+    }
+    ```
+
+### 20.3 Top K Frequent Elemnets lc347
+ - [link](https://leetcode.com/problems/top-k-frequent-elements/)
+ - medium
+ - Given a non-empty array of integers, return the k most frequent elements.
+ - Note: 
+    - You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
+    - Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
+ - **Example:**
+    ```python
+    Input: nums = [1,1,1,2,2,3], k = 2
+    Output: [1,2]
+
+    Input: nums = [1], k = 1
+    Output: [1]
+    ```
+ - [topKFrequent]
+    ```java
+    class Solution {
+        public List<Integer> topKFrequent(int[] nums, int k) {
+            // using the minheap to store the top k frequent numnber, O(Nlogk)
+            List<Integer>[] bucket = new ArrayList[nums.length+1];
+            // first count the frequency of each unique int
+            Map<Integer,Integer> freqMap = new HashMap<Integer,Integer>();
+            for(int n:nums){
+                freqMap.put(n, freqMap.getOrDefault(n, 0)+1);
+            }
+            
+            // put the frequency into minheap, O(Nlogk)
+            Queue<Map.Entry<Integer, Integer>> minheap = new PriorityQueue<Map.Entry<Integer,Integer>>((a,b)-> a.getValue()-b.getValue());
+            for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+                minheap.offer(entry);
+                if(minheap.size()>k)
+                    minheap.poll();
+            }
+            
+            List<Integer> ret = new ArrayList<Integer>();
+            for (Map.Entry<Integer, Integer> entry : minheap) {
+                ret.add(entry.getKey());
+                // int old = ret.set(0, entry.getKey());
+                // ret.set(ret.size()-1, old);
+            }
+            return ret;
+        }
+    }
+    ```
 
 ### 21. Third Maximum Number lc414
  - [link](https://leetcode.com/problems/third-maximum-number)
  - easy
+ - Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+ - **Example:**
+    ```python
+    Input: [2, 2, 3, 1]
+    Output: 1
+    Explanation: Note that the third maximum here means the third maximum distinct number.
+    Both numbers with value 2 are both considered as second maximum.
+
+    Input: [1, 2]
+    Output: 2
+    Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
+    ```
+ - [thirdMax] can use priority queue along with a hashset in java
+    ```python
+    def thirdMax(self, nums: List[int]) -> int:
+        # find the thrid largest distinct number
+        # nums = list(set(nums))
+        max1,max2,max3 = float('-inf'),float('-inf'),float('-inf')
+        
+        for num in nums:
+            if num>max1:
+                max1,max2,max3 = num,max1,max2
+            elif num>max2 and num<max1:
+                max2,max3 = num,max2
+            elif num>max3 and num<max2:
+                max3=num
+        
+        if max3==float('-inf'):
+            return max(max1,max2)
+        else:
+            return max3
+    ```
 
 ### 22.1 Max Consecutive Ones lc485
  - [link](https://leetcode.com/problems/max-consecutive-ones)
  - easy
+ - Given a binary array, find the maximum number of consecutive 1s in this array.
+ - Note: 
+    - The input array will only contain 0 and 1.
+    - The length of input array is a positive integer and will not exceed 10,000
+ - **Example:**
+    ```python
+    Input: [1,1,0,1,1,1]
+    Output: 3
+    Explanation: The first two digits or the last three digits are consecutive 1s.
+        The maximum number of consecutive 1s is 3.
+    ```
+ - [maxConsecutive1] using pointers
+    ```python
+    def findMaxConsecutiveOnes(self, nums):
+        n=len(nums)
+        start=0 # the left pointer of the window
+        p=0 # the pointer to go through the array
+        maxWindowSize=0
+        while (p<n):
+            while(p<n and not nums[p]): p+=1
+            start=p
+            while(p<n and nums[p]): p+=1
+            if (p-start)>maxWindowSize:
+                maxWindowSize = p-start
+        return maxWindowSize
+    ```
 
 ### 22.2 Max Consecutive Ones II lc487
  - [link](https://leetcode.com/problems/max-consecutive-ones-ii)
  - medium
-
-### 22.3 Max Consecutive Ones III lc1004
- - [link](https://leetcode.com/problems/max-consecutive-ones-iii)
- - medium
+ - Given a binary array, find the maximum number of consecutive 1s in this array if you can flip at most one 0.
+ - Note: 
+    - The input array will only contain 0 and 1.
+    - The length of input array is a positive integer and will not exceed 10,000
+ - Follow up: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?(solve it in one path)
+ - **Example:**
+    ```python
+    Input: [1,0,1,1,0]
+    Output: 4
+    Explanation: Flip the first zero will get the the maximum number of consecutive 1s.
+        After flipping, the maximum number of consecutive 1s is 4.
+    ```
+  - [maxConsecutive1-wFlip0] using pointers
+```python
+    def findMaxConsecutiveOnes(nums):
+        n=len(nums)
+        start=0
+        p=0
+        maxWindowSize=0
+        flipcnt=1 # has one chance to flip the zero, in this problem, it is 1
+        zerocnt=0 # the number of zero in the window
+        while (p<n):
+            if not nums[p]: zerocnt+=1
+            # make sure that the window has at most `flipcnt` number of zeros
+            while zerocnt>flipcnt:
+                if not nums[start]:
+                    zerocnt-=1
+                start+=1
+            p+=1
+            if (p-start)>maxWindowSize:
+                maxWindowSize = p-start
+        return maxWindowSize
+    ```
 
 ### 23. Find All Anagrams in a String lc438
  - [link](https://leetcode.com/problems/find-all-anagrams-in-a-string)
