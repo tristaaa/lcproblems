@@ -1342,6 +1342,21 @@
 ### 23. Find All Anagrams in a String lc438
  - [link](https://leetcode.com/problems/find-all-anagrams-in-a-string)
  - medium
+ - Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+ - Anagram is a word that formed by rearranging the letters of another, note the anagram can be the same as the original word
+ - Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
+ - The order of output does not matter.
+ - **Example:**
+    ```python
+    Input: s: "abab" p: "ab"
+    Output: [0, 1, 2]
+    Explanation:
+    The substring with start index = 0 is "ab", which is an anagram of "ab".
+    The substring with start index = 1 is "ba", which is an anagram of "ab".
+    The substring with start index = 2 is "ab", which is an anagram of "ab".
+    ```
+ - sliding window: [findAnagram](https://github.com/tristaaa/lcproblems/blob/master/findAnagram.py)
+
 
 ### 24.1 Minimum Window Substring lc76
  - [link](https://leetcode.com/problems/minimum-window-substring)
