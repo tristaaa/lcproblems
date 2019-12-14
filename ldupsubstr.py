@@ -9,7 +9,51 @@ class Solution:
             :type S: str
             :rtype: str
         """
-        # method 1
+        # method 1 [1380 ms]
+        # Rabin Karp algorithm
+        # 1. how to find the length of the lonest string
+        # 2. how to compare the string of the same length
+        # 1: we can use binary search for answer since if a string of length n is invalid 
+        # then for all k > n, there's definetly no solution. 
+        # Similarly if a string of length n is valid, we don't have to check strings with length < n. 
+        # 2: we are actually trying to compare a sliding window of string, using Rabin Karp algorithm
+        # The algorithm basically computes the hash value of all the string 
+        # and start a character by character comparison only if the two strings have the same hash value. 
+        # In order to avoid collision we can use a large prime number such as 1e9 + 7, 19260817, 99999989, etc.
+
+        low, high = 0, len(S) - 1
+        best = ''
+
+        A = [ord(c)-ord('a') for c in S]
+        MOD = (1 << 61) - 1
+        BASE = 26
+        def find_duplicate_substr_of_len_k(S, k):
+            ''' see if there exist a substr of length k that have duplicate in the give string S '''
+            D = pow(BASE, k, MOD) # same as pow(BASE, k-1) % MOD
+            cur = reduce(lambda x, y: (x * 26 + y) % MOD, A[:k])
+            seen = {cur}
+            for i in range(k, len(S)):
+                cur = (cur * 26 + A[i] - A[i - k] * D) % MOD
+                if cur in seen: return S[i-k+1:i+1]
+                seen.add(cur)
+
+
+        # using binary search
+        while low < high:
+            mid = (low + high+1) // 2
+            substrk = find_duplicate_substr_of_len_k(S, mid)
+
+            if substrk:
+                best = substrk
+                low = mid
+            else:
+                high = mid-1
+
+        return best
+
+
+
+        # method 2 [time limit exceeded]
         # using suffix array
         # Given a String we build its Suffix array and LCP (longest common Prefix)
         # The maximum LCP is the size of longest duplicated substring
@@ -93,50 +137,6 @@ class Solution:
         lcp_len = max(lcp)
         start = suffArr[lcp.index(lcp_len)] if lcp_len>0 else n
         return S[start:start+lcp_len]
-
-
-
-        # method 2 
-        # Rabin Karp algorithm
-        # 1. how to find the length of the lonest string
-        # 2. how to compare the string of the same length
-        # 1: we can use binary search for answer since if a string of length n is invalid 
-        # then for all k > n, there's definetly no solution. 
-        # Similarly if a string of length n is valid, we don't have to check strings with length < n. 
-        # 2: we are actually trying to compare a sliding window of string, using Rabin Karp algorithm
-        # The algorithm basically computes the hash value of all the string 
-        # and start a character by character comparison only if the two strings have the same hash value. 
-        # In order to avoid collision we can use a large prime number such as 1e9 + 7, 19260817, 99999989, etc.
-
-        low, high = 0, len(S) - 1
-        best = ''
-
-        A = [ord(c)-ord('a') for c in S]
-        MOD = (1 << 61) - 1
-        BASE = 26
-        def find_duplicate_substr_of_len_k(S, k):
-            ''' see if there exist a substr of length k that have duplicate in the give string S '''
-            D = pow(BASE, k, MOD) # same as pow(BASE, k-1) % MOD
-            cur = reduce(lambda x, y: (x * 26 + y) % MOD, A[:k])
-            seen = {cur}
-            for i in range(k, len(S)):
-                cur = (cur * 26 + A[i] - A[i - k] * D) % MOD
-                if cur in seen: return S[i-k+1:i+1]
-                seen.add(cur)
-
-
-        # using binary search
-        while low < high:
-            mid = (low + high+1) // 2
-            substrk = find_duplicate_substr_of_len_k(S, mid)
-
-            if substrk:
-                best = substrk
-                low = mid
-            else:
-                high = mid-1
-
-        return best
 
 
 # test
