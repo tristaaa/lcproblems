@@ -48,12 +48,12 @@ class Solution:
 
 
         # using binary search
-        while low <= high:
-            mid = (low + high) // 2 # floor((L + R) / 2)
+        while low < high:
+            mid = (low + high + 1) // 2 # ceil((L + R) / 2)
             substrk = find_duplicate_substr_of_len_k(S, mid)
-            if substrk:
+            if substrk: # like the condition that a[m]<=T
                 best = substrk
-                low = mid+1
+                low = mid
             else:
                 high = mid-1
 
