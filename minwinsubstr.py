@@ -16,7 +16,7 @@ class Solution:
             hashmap[c]+=1
             
         char_cnt = len(hashmap)
-        minLen = len(s)+1
+        minLen = len(s)+1 # initialize the min window length, it must be no larger than len(s)
         
         l=0
         for r in range(len(s)):
