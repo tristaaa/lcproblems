@@ -1361,10 +1361,34 @@
 ### 24.1 Minimum Window Substring lc76
  - [link](https://leetcode.com/problems/minimum-window-substring)
  - hard
+ - Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+ - **Example:**
+    ```python
+    Input: S = "ADOBECODEBANC", T = "ABC"
+    Output: "BANC"
+    ```
+ - sliding window: [minWindowSubstr](https://github.com/tristaaa/lcproblems/blob/master/minwinsubstr.py)
+
 
 ### 24.2 Minimum Window Subsequence lc727
  - [link](https://leetcode.com/problems/minimum-window-subsequence)
  - hard
+ - Given strings S and T, find the minimum (contiguous) substring W of S, so that T is a subsequence of W.
+ - If there is no such window in S that covers all characters in T, return the empty string "". If there are multiple such minimum-length windows, return the one with the **left-most** starting index.
+ - Note:
+    - All the strings in the input will only contain lowercase letters.
+    - The length of S will be in the range [1, 20000].
+    - The length of T will be in the range [1, 100].
+ - **Example:**
+    ```python
+    Input: S = "abcdebdde", T = "bde"
+    Output: "bcde"
+    Explanation: 
+    "bcde" is the answer because it occurs before "bdde" which has the same length.
+    "deb" is not a smaller window because the elements of T in the window must occur in order.
+    ```
+ - sliding window: [minWindowSubseq](https://github.com/tristaaa/lcproblems/blob/master/minwinsubseq.py)
+ 
 
 ### 25.1 Sliding Window Maximum lc239
  - [link](https://leetcode.com/problems/sliding-window-maximum)
