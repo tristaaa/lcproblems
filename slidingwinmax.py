@@ -37,9 +37,11 @@ class Solution:
             # remove numbers out of range k
             if my_deque and my_deque[0]<i-k+1:
                 my_deque.popleft()
+            # print("bf:",my_deque)
             # remove smaller numbers in k range as they are useless
             while my_deque and nums[my_deque[-1]] < nums[i]:
                 my_deque.pop()
+            # print(i,my_deque)
             
             # my_deque contains index
             my_deque.append(i)
