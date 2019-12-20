@@ -15,7 +15,7 @@ class Solution:
         dd = {}
         for i in range(len(nums)):
             numj = target - nums[i]
-            if numj in dd and i!=dd[numj]:
+            if numj in dd:
                 return [i, dd[numj]]
             dd[nums[i]] = i
          
