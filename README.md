@@ -1393,14 +1393,73 @@
 ### 25.1 Sliding Window Maximum lc239
  - [link](https://leetcode.com/problems/sliding-window-maximum)
  - hard
+ - Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. 
+ - You can only see the k numbers in the window. 
+ - Each time the sliding window moves right by one position. 
+ - Return the max sliding window.(the list of the local max value in every window)
+ - Note: You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty array.
+ - **Example:**
+    ```python
+    Input: nums = [1,3,-1,-3,5,3,6,7], and k = 3
+    Output: [3,3,5,5,6,7] 
+    Explanation: 
+    Window position                Max
+    ---------------               -----
+    [1  3  -1] -3  5  3  6  7       3
+     1 [3  -1  -3] 5  3  6  7       3
+     1  3 [-1  -3  5] 3  6  7       5
+     1  3  -1 [-3  5  3] 6  7       5
+     1  3  -1  -3 [5  3  6] 7       6
+     1  3  -1  -3  5 [3  6  7]      7
+    ```
+ - dequeue(double-ended queue): [slidingWinMaximum](https://github.com/tristaaa/lcproblems/blob/master/slidingwinmax.py)
+ 
 
 ### 25.2 Sliding Window Median lc480
  - [link](https://leetcode.com/problems/sliding-window-median)
  - hard
+ - Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
+ - Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. 
+ - You can only see the k numbers in the window.
+ - Each time the sliding window moves right by one position. 
+ - Your job is to output the median array for each window in the original array.
+ - Note: You may assume k is always valid, ie: k is always smaller than input array's size for non-empty array.
+ - **Example:**
+    ```python
+    Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
+
+    Window position                Median
+    ---------------               -----
+    [1  3  -1] -3  5  3  6  7       1
+     1 [3  -1  -3] 5  3  6  7       -1
+     1  3 [-1  -3  5] 3  6  7       -1
+     1  3  -1 [-3  5  3] 6  7       3
+     1  3  -1  -3 [5  3  6] 7       5
+     1  3  -1  -3  5 [3  6  7]      6
+    ```
+ - dequeue(double-ended queue): [slidingWinMaximum](https://github.com/tristaaa/lcproblems/blob/master/slidingwinmed.py)
+
 
 ### 26.1 Min Stack lc155
  - [link](https://leetcode.com/problems/min-stack)
  - easy
+ - Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+    push(x) -- Push element x onto stack.
+    pop() -- Removes the element on top of the stack.
+    top() -- Get the top element.
+    getMin() -- Retrieve the minimum element in the stack.
+ - **Example:**
+    ```python
+    minStack = MinStack();
+    minStack.push(-2);
+    minStack.push(0);
+    minStack.push(-3);
+    minStack.getMin();   --> Returns -3.
+    minStack.pop();
+    minStack.top();      --> Returns 0.
+    minStack.getMin();   --> Returns -2.
+    ```
+ - build another stack for the curr minval: [minstack](https://github.com/tristaaa/lcproblems/blob/master/minstack.py)
 
 ### 26.2 Max Stack lc716
  - [link](https://leetcode.com/problems/max-stack)
@@ -1430,6 +1489,7 @@
  - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
  - hard
 
-
+lc93
+lc
 
 [**Back To Top**](https://github.com/tristaaa/lcproblems#leetcode-problems)
