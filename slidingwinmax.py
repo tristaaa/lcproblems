@@ -39,9 +39,10 @@ class Solution:
                 my_deque.popleft()
             # print("bf:",my_deque)
             # remove smaller numbers in k range as they are useless
+            # make sure the my_deque only stores the inwindow position where numbers are larger than curr number
             while my_deque and nums[my_deque[-1]] < nums[i]:
                 my_deque.pop()
-            # print(i,my_deque)
+            print(i,my_deque)
             
             # my_deque contains index
             my_deque.append(i)
