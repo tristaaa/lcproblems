@@ -16,11 +16,11 @@ class Solution:
         # the subproblem is reduce to find the median of two sorted array with one array being cut half
         # Notice that here the k is the idx 
         def findKidx(nums1,nums2,l1,l2,r1,r2,k):
-            print(k,l1,l2,r1,r2)
+            # print(k,l1,l2,r1,r2)
             if l1 > r1: return nums2[l2+k]
             if l2 > r2: return nums1[l1+k]
 
-            if k==0: return min(nums1[l1+k],nums2[l2+k])
+            if k==0: return min(nums1[l1],nums2[l2])
 
             idx1,idx2 = (l1+r1)//2,(l2+r2)//2
             mid1,mid2 = nums1[idx1],nums2[idx2]
