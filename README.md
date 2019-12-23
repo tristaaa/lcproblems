@@ -1437,7 +1437,51 @@
      1  3  -1  -3 [5  3  6] 7       5
      1  3  -1  -3  5 [3  6  7]      6
     ```
- - dequeue(double-ended queue): [slidingWinMaximum](https://github.com/tristaaa/lcproblems/blob/master/slidingwinmed.py)
+ - dequeue(double-ended queue): [slidingWinMedian](https://github.com/tristaaa/lcproblems/blob/master/slidingwinmed.py)
+ ```java
+    // using two treesets to store the index
+    public double[] medianSlidingWindow(int[] nums, int k) {
+        int m = nums.length - k + 1;
+        if (m<=0) return new double[0];
+
+        //first sort in incresing value, then sort in increasing index
+        Comparator<Integer> comparator = (a, b) -> nums[a] != nums[b] ? Integer.compare(nums[a], nums[b]) : a - b;
+        // like maxheap, the first element is the largest, store indices where numbers are smaller than median
+        TreeSet<Integer> left = new TreeSet<>(comparator.reversed());
+        // like minheap, the first element is the smallest, store indices where numbers are larger than or equal to median
+        TreeSet<Integer> right = new TreeSet<>(comparator);
+
+        Supplier<Double> median = (k % 2) ?
+            () -> (double) nums[right.first()]:
+            () -> ((double) nums[left.first()] + nums[right.first()]) / 2 ;
+
+        // balance lefts size and rights size (if not equal then right will be larger by one)
+        Runnable balance = () -> { while (left.size() > right.size()) right.add(left.pollFirst()); };
+
+        double[] result = new double[m];
+
+        for (int i = 0; i < k; i++) 
+            left.add(i);
+        balance.run(); 
+        result[0] = median.get();
+
+        for (int i = k, r = 1; i < nums.length; i++, r++) {
+            // remove tail of window from either left or right
+            if(!left.remove(i - k)) 
+                right.remove(i - k);
+
+            // add next num, this will always increase left size
+            right.add(i); 
+            left.add(right.pollFirst());
+            
+            // rebalance left and right, then get median from them
+            balance.run(); 
+            result[r] = median.get();
+        }
+
+        return result;
+    }
+ ```
 
 
 ### 26.1 Min Stack lc155
@@ -1464,6 +1508,101 @@
 ### 26.2 Max Stack lc716
  - [link](https://leetcode.com/problems/max-stack)
  - easy
+ - Design a max stack that supports push, pop, top, peekMax and popMax.
+    push(x) -- Push element x onto stack.
+    pop() -- Remove the element on top of the stack and return it.
+    top() -- Get the element on the top.
+    peekMax() -- Retrieve the maximum element in the stack.
+    popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.
+ - **Example:**
+    ```python
+    stack = MaxStack();
+    stack.push(5); 
+    stack.push(1);
+    stack.push(5);
+    stack.top(); -> 5
+    stack.popMax(); -> 5
+    stack.top(); -> 1
+    stack.peekMax(); -> 5
+    stack.pop(); -> 1
+    stack.top(); -> 5
+    ```
+ - two stacks or double linked list+treemap: [maxstack](https://github.com/tristaaa/lcproblems/blob/master/minstack.py)
+ - double linked list+treemap 
+ ```java
+     class MaxStack {
+        
+        private static class ListNode {
+            public ListNode prev, next;
+            public int value;
+            
+            public ListNode(int val) {
+                this.value = val;
+            }
+        }
+        
+        private final ListNode head;
+        private final TreeMap<Integer, LinkedList<ListNode>> map = new TreeMap<>(); 
+
+        /** initialize your data structure here. */
+        public MaxStack() {
+            head = new ListNode(0);
+            head.next = head.prev = head;
+        }
+        
+        //O(logN)
+        public void push(int x) {
+            ListNode node = new ListNode(x);
+            node.next = head;
+            node.prev = head.prev;
+            head.prev.next = node;
+            head.prev = node;
+            //get in treemap is logn
+            map.computeIfAbsent(x, k -> new LinkedList<>()).add(node);
+        }
+        
+        // O(logN)
+        public int pop() {
+            ListNode tail = head.prev;
+            
+            deleteNode(tail);
+            // since it's pop(), we are always sure that the last element in the map's value list will be the tail
+            map.get(tail.value).removeLast();
+            //get is logn
+            if (map.get(tail.value).isEmpty()) {
+                //remove is logn
+                map.remove(tail.value);
+            }
+            return tail.value;
+        }
+        
+        //O(1)
+        public int top() {
+            return head.prev.value;
+        }
+        
+        //O(logN)
+        public int peekMax() {
+            return map.lastKey();
+        }
+        
+        //O(logN)
+        public int popMax() {
+            int max = peekMax();
+            ListNode node = map.get(max).removeLast();
+            deleteNode(node);
+            if (map.get(max).isEmpty()) {
+                map.remove(max);
+            }
+            return max;
+        }
+        
+        private void deleteNode(ListNode node) {
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+        }
+    }
+ ```
 
 ### 27. 01 Matrix lc542
  - [link](https://leetcode.com/problems/01-matrix)
@@ -1490,6 +1629,6 @@
  - hard
 
 lc93
-lc
+lc00
 
 [**Back To Top**](https://github.com/tristaaa/lcproblems#leetcode-problems)
