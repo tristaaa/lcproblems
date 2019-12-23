@@ -1607,10 +1607,75 @@
 ### 27. 01 Matrix lc542
  - [link](https://leetcode.com/problems/01-matrix)
  - medium
+ - Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
+ - The distance between two adjacent cells is 1.
+ - **Example:**
+    ```python
+    Input:
+    [[0,0,0],
+     [0,1,0],
+     [1,1,1]]
+
+    Output:
+    [[0,0,0],
+     [0,1,0],
+     [1,2,1]]
+    ```
+ - bfs: [01Matrix](https://github.com/tristaaa/lcproblems/blob/master/01matrix.py)
+ ```java
+    public int[][] updateMatrix(int[][] matrix) {
+        if (matrix.length==0 || matrix[0].length==0) return matrix;
+        
+        int M = matrix.length;
+        int N = matrix[0].length;
+        //using bfs
+        Queue<int[]> q = new LinkedList<int[]>();
+        for (int i=0;i<M;i++){
+            for(int j=0;j<N;j++){
+                if(matrix[i][j]==0)
+                    q.offer(new int[]{i,j});
+                else{
+                    // the greatest distance wouldn't be larger than M+N-2
+                    matrix[i][j]=M+N;
+                }
+            }
+        }
+        
+        int[][] dirs = new int[][] {{1,0},{0,1},{-1,0},{0,-1}};
+        while(!q.isEmpty()) {
+            int[] cell = q.poll();
+            for(int[] dir: dirs) {
+                int x = cell[0]+dir[0];
+                int y = cell[1]+dir[1];
+                // see if the new cell is a valid position and the greatest distance to zero can be updated to a smaller one
+                if(x>=0 && x<M && y>=0 && y<N && matrix[x][y]>matrix[cell[0]][cell[1]]+1) {
+                    q.offer(new int[]{x,y});
+                    matrix[x][y] = matrix[cell[0]][cell[1]]+1;
+                }
+            }
+        }
+        
+        return matrix;
+    }
+ ```
+
 
 ### 28. Shortest Bridge lc934
  - [link](https://leetcode.com/problems/shortest-bridge)
  - medium
+ - **Example:**
+    ```python
+    Input:
+    [[0,0,0],
+     [0,1,0],
+     [1,1,1]]
+
+    Output:
+    [[0,0,0],
+     [0,1,0],
+     [1,2,1]]
+    ```
+ - bfs: [01Matrix](https://github.com/tristaaa/lcproblems/blob/master/01matrix.py)
 
 ### 29.1 The Maze lc490
  - [link](https://leetcode.com/problems/the-maze)
