@@ -17,6 +17,8 @@ class Solution:
         The maze contains at least 2 empty spaces, 
         and both the width and height of the maze won't exceed 100.
         """
+
+        # bfs
         from collections import deque
         visited = set((start[0],start[1]))
         queue = deque([start])
@@ -37,6 +39,31 @@ class Solution:
                         queue.append([x,y])
                     visited.add((x, y))
         return False
+
+        # dfs
+        visited=set()
+        dirs = [(1,0),(0,1),(-1,0),(0,-1)]
+        m,n = len(maze), len(maze[0])
+
+        def dfs(start):
+            if (start[0],start[1]) in visited: return False
+            if start==destination: return True
+            
+            visited.add((start[0],start[1]))
+
+            for d in dirs:
+                x,y=start[0]+d[0],start[1]+d[1]
+                if 0<=x<m and 0<=y<n and maze[x][y]==0:
+                    while 0<=x+d[0]<m and 0<=y+d[1]<n and maze[x+d[0]][y+d[1]] == 0:
+                        x, y = x+d[0], y+d[1]
+                    if dfs([x,y]): return True
+                        
+            return False
+
+        return dfs(start)
+
+
+
 
 sol = Solution()
 maze=[[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]]
