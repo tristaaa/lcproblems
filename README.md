@@ -1609,6 +1609,10 @@
  - medium
  - Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell.
  - The distance between two adjacent cells is 1.
+ - Note:
+    - The number of elements of the given matrix will not exceed 10,000.
+    - There are at least one 0 in the given matrix.
+    - The cells are adjacent in only four directions: up, down, left and right.
  - **Example:**
     ```python
     Input:
@@ -1663,35 +1667,215 @@
 ### 28. Shortest Bridge lc934
  - [link](https://leetcode.com/problems/shortest-bridge)
  - medium
+ - In a given 2D binary array A, there are two islands.  (An island is a 4-directionally connected group of 1s not connected to any other 1s.)
+ - Now, we may change 0s to 1s so as to connect the two islands together to form 1 island.
+ - Return the smallest number of 0s that must be flipped.  (It is guaranteed that the answer is at least 1.)
+ - Note:
+    - 1 <= A.length = A[0].length <= 100
+    - A[i][j] == 0 or A[i][j] == 1
  - **Example:**
     ```python
-    Input:
-    [[0,0,0],
-     [0,1,0],
-     [1,1,1]]
+    Input: 
+    [[0,1,0],
+    [0,0,0],
+    [0,0,1]]
+    Output: 2
 
-    Output:
-    [[0,0,0],
-     [0,1,0],
-     [1,2,1]]
+    Input: 
+    [[1,1,1,1,1],
+    [1,0,0,0,1],
+    [1,0,1,0,1],
+    [1,0,0,0,1],
+    [1,1,1,1,1]]
+    Output: 1
     ```
- - bfs: [01Matrix](https://github.com/tristaaa/lcproblems/blob/master/01matrix.py)
+ - dfs and bfs: [shortestBridge](https://github.com/tristaaa/lcproblems/blob/master/shtbridge.py)
 
 ### 29.1 The Maze lc490
  - [link](https://leetcode.com/problems/the-maze)
  - medium
+ - There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right, but it ***won't stop rolling until hitting a wall***. When the ball stops, it could choose the next direction.
+ - Given the ball's start position, the destination and the maze, determine whether the ball could stop at the destination.
+ - The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
+ - Note:
+    - There is only one ball and one destination in the maze.
+    - Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
+    - The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
+    - The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
+ - - **Example:**
+    ```python
+    Input 1: a maze represented by a 2D array
+    0 0 1 0 0
+    0 0 0 0 0
+    0 0 0 1 0
+    1 1 0 1 1
+    0 0 0 0 0
+    Input 2: start coordinate (rowStart, colStart) = (0, 4)
+    Input 3: destination coordinate (rowDest, colDest) = (4, 4)
+    Output: true
+    Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right.
+
+    Input 1: a maze represented by a 2D array
+    0 0 1 0 0
+    0 0 0 0 0
+    0 0 0 1 0
+    1 1 0 1 1
+    0 0 0 0 0
+    Input 2: start coordinate (rowStart, colStart) = (0, 4)
+    Input 3: destination coordinate (rowDest, colDest) = (3, 2)
+    Output: false
+    Explanation: There is no way for the ball to stop at the destination
+    ```
+ - dfs or bfs: [maze](https://github.com/tristaaa/lcproblems/blob/master/maze.py)
+
 
 ### 29.1 The Maze II lc505
  - [link](https://leetcode.com/problems/the-maze-ii)
  - medium
+ - There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up, down, left or right, but it ***won't stop rolling until hitting a wall***. When the ball stops, it could choose the next direction.
+ - Given the ball's start position, the destination and the maze, determine whether the ball could stop at the destination.
+ - The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The start and destination coordinates are represented by row and column indexes.
+ - Note:
+    - There is only one ball and one destination in the maze.
+    - Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
+    - The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
+    - The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
+ - - **Example:**
+    ```python
+    Input 1: a maze represented by a 2D array
+        0 0 1 0 0
+        0 0 0 0 0
+        0 0 0 1 0
+        1 1 0 1 1
+        0 0 0 0 0
+    Input 2: start coordinate (rowStart, colStart) = (0, 4)
+    Input 3: destination coordinate (rowDest, colDest) = (4, 4)
+    Output: true
+    Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right.
+
+    Input 1: a maze represented by a 2D array
+        0 0 1 0 0
+        0 0 0 0 0
+        0 0 0 1 0
+        1 1 0 1 1
+        0 0 0 0 0
+    Input 2: start coordinate (rowStart, colStart) = (0, 4)
+    Input 3: destination coordinate (rowDest, colDest) = (3, 2)
+    Output: false
+    Explanation: There is no way for the ball to stop at the destination
+    ```
+ - dfs or bfs: [maze2](https://github.com/tristaaa/lcproblems/blob/master/mazeii.py)
+ 
 
 ### 29.1 The Maze III lc499
  - [link](https://leetcode.com/problems/the-maze-iii)
  - hard
+ - There is a ball in a maze with empty spaces and walls. The ball can go through empty spaces by rolling up (u), down (d), left (l) or right (r), but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction. 
+ - There is also a **hole** in this maze. The ball will drop into the hole if it rolls on to the hole.
+ - Given the ball position, the hole position and the maze, find out how the ball could drop into the hole by moving the **shortest distance**. The distance is defined by the number of empty spaces traveled by the ball from the start position (excluded) to the hole (included). 
+ - Output the **moving directions** by using 'u', 'd', 'l' and 'r'. Since there could be several different shortest ways, you should output the **lexicographically smallest** way. If the ball cannot reach the hole, output "impossible".
+ - The maze is represented by a binary 2D array. 1 means the wall and 0 means the empty space. You may assume that the borders of the maze are all walls. The ball and the hole coordinates are represented by row and column indexes.
+ - Note:
+    - There is only one ball and one destination in the maze.
+    - Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
+    - The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
+    - The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
+ - - **Example:**
+    ```python
+    Input 1: a maze represented by a 2D array
+        0 0 0 0 0
+        1 1 0 0 1
+        0 0 0 0 0
+        0 1 0 0 1
+        0 1 0 0 0
+    Input 2: ball coordinate (rowStart, colStart) = (4, 3)
+    Input 3: hole coordinate (rowDest, colDest) = (0, 1)
+    Output: 'lul'
+    Explanation: There are two shortest ways for the ball to drop into the hole.
+    The first way is left -> up -> left, represented by "lul".
+    The second way is up -> left, represented by 'ul'.
+    Both ways have shortest distance 6, but the first way is lexicographically smaller because 'l' < 'u'. So the output is "lul".
+    ```
+ - dfs or bfs: [maze3](https://github.com/tristaaa/lcproblems/blob/master/mazeiii.py)
+ ```java
+    class Point implements Comparable<Point> {
+        int row;
+        int col;
+        int dist;  // distance from ball
+        String dir;  // directions from ball
+        Point(int row, int col, int dist, String dir) {
+            this.row = row;
+            this.col = col;
+            this.dist = dist;
+            this.dir = dir;
+        }
+        public int compareTo(Point other) {
+            return this.dist == other.dist ? this.dir.compareTo(other.dir) : this.dist - other.dist;
+        }
+    }
+    public static String findShortestWay(int[][] maze, int[] ball, int[] hole) {
+        PriorityQueue<Point> pq = new PriorityQueue<>();
+        pq.offer(new Point(ball[0], ball[1], 0, ""));
+        
+        // arrays used for exploring 4 directions from a point
+        // [1,0] means go down one row
+        char[] dstr = {'d', 'l', 'r', 'u'};
+        int[][] dirs = {{1,0},{0,-1},{0,1},{-1,0}};
+        
+        while (!pq.isEmpty()) {
+            Point pt = pq.poll();
+            // the current ball falls into the hole, 
+            // since the first element in the priority queue must have the shortest distance to the start 
+            // and the direction string is in the first in lexicographical order
+            if (pt.row == hole[0] && pt.col == hole[1]) { 
+                return pt.dir;
+            }
+            if(maze[pt.row][pt.col] == 2) continue;
+            maze[pt.row][pt.col] = 2;
+            
+            for (int i = 0; i < dirs.length; i++) {
+                int x = pt.row;
+                int y = pt.col;
+                int dist = pt.dist;
+                String ds = pt.dir;
+                
+                // Explore current direction until hitting a wall or the hole
+                while (x + dirs[i][0] >= 0 &&
+                       x + dirs[i][0] < maze.length &&
+                       y + dirs[i][1] >= 0 &&
+                       y + dirs[i][1] < maze[0].length &&
+                       maze[x + dirs[i][0]][y + dirs[i][1]] ==0) {
+                    
+                    x += dirs[i][0];
+                    y += dirs[i][1];
+                    dist += 1;
+                    if (x == hole[0] && y == hole[1]) {
+                        break;
+                    }
+                }
+                if (maze[x][y]==0) {
+                    pq.offer(new Point(x, y, dist, ds+dstr[i]));
+                }
+            }
+        }
+        return "impossible";
+    }
+ ```
+ 
+
 
 ### 30. Serialize and Deserialize Binary Tree lc297
  - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
  - hard
+
+### 31.1 Search a 2D Matrix lc74
+ - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+ - medium
+ 
+### 31.2 Search a 2D Matrix II lc240
+ - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+ - medium
+
 
 lc93
 lc00
