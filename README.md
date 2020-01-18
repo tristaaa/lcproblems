@@ -1863,18 +1863,142 @@
  ```
  
 
-
 ### 30. Serialize and Deserialize Binary Tree lc297
  - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
  - hard
 
 ### 31.1 Search a 2D Matrix lc74
- - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+ - [link](https://leetcode.com/problems/search-a-2d-matrix/)
  - medium
+ - Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+     - Integers in each row are sorted from left to right.
+     - The first integer of each row is greater than the last integer of the previous row.
+ - **Example:**
+    ```python
+    Input:
+    matrix = [
+      [1,   3,  5,  7],
+      [10, 11, 16, 20],
+      [23, 30, 34, 50]
+    ]
+    target = 3
+    Output: true
+    ```
+ - binary search: [search2DMAtrix](https://github.com/tristaaa/lcproblems/blob/master/search2dmat.py)
  
 ### 31.2 Search a 2D Matrix II lc240
- - [link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+ - [link](https://leetcode.com/problems/search-a-2d-matrix-ii/)
  - medium
+ - Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+     - Integers in each row are sorted in ascending from left to right.
+     - Integers in each column are sorted in ascending from top to bottom.
+ - **Example:**
+    ```python
+    Input:
+    matrix = [
+      [1,   4,  7, 11, 15],
+      [2,   5,  8, 12, 19],
+      [3,   6,  9, 16, 22],
+      [10, 13, 14, 17, 24],
+      [18, 21, 23, 26, 30]
+    ]
+    target = 5
+    Output: true
+    ```
+ - binary search: [search2DMAtrixII](https://github.com/tristaaa/lcproblems/blob/master/search2dmatii.py)
+ 
+
+### 32.1 Critical Connections in a Network lc1192
+ - [link](https://leetcode.com/problems/critical-connections-in-a-network/)
+ - hard
+ - There are n servers numbered from 0 to n-1 connected by undirected server-to-server connections forming a network where connections[i] = [a, b] represents a connection between servers a and b. Any server can reach any other server directly or indirectly through the network.
+ - A critical connection is a connection that, if removed, will make some server unable to reach some other server.
+ - Return all critical connections in the network in increasing order of node id.
+ - **Example:**
+    ```python
+    Input: n = 5, connections = [[1, 2], [1, 3], [3, 4], [1, 4], [4, 5]]
+    Output: [[1,2],[4,5]]
+    ```
+ - Tarjan's Algorithm (using dfs): [ctiticalConnections](https://github.com/tristaaa/lcproblems/blob/master/crtconnection.py)
+ 
+### 32.2 Critical Routers in a Network
+ - [link](https://leetcode.com/discuss/interview-question/436073/)
+ - hard
+ - You are given an undirected connected graph. 
+ - An articulation point (or cut vertex) is defined as a vertex which, when removed along with associated edges, makes the graph disconnected (or more precisely, increases the number of connected components in the graph). 
+ - The task is to find all articulation points in the given graph.
+ - **Example:**
+    ```python
+    Input: 
+        numNodes = 7
+        numEdges = 7
+        edges = [[0, 1], [0, 2], [1, 3], [2, 3], [2, 5], [5, 6], [3, 4]]
+    Output: [2, 3, 5]
+    ```
+ - Tarjan's Algorithm (using dfs): [ctiticalRouters]
+ ```java
+    int time = 0; //global counter, used for the id of each vertex
+    
+    public List<Integer> criticalRouter(int numNodes, int numEdges, int[][] edges) {
+        List<Integer>[] graph = new ArrayList[numNodes];
+       
+        for (int i = 0; i < numNodes; i++)
+            graph[i]=new ArrayList();
+        //build the graph
+        for (int[] curr : edges) {
+            graph[curr[0]].add(curr[1]);
+            graph[curr[1]].add(curr[0]);
+        }
+        
+        Set<Integer> ret = new HashSet<>();
+        int[] low = new int[numNodes];
+        int[] disc = new int[numNodes];
+        Arrays.fill(disc, -1); // id of each vertex, mark the time when the vertex is discovered, -1 means undiscovered
+        
+        
+        for (int i = 0; i < numNodes; i++) {
+            if (disc[i] == -1)
+                dfs(graph, i, -1, low, disc, ret);
+        }
+        
+        return new ArrayList<Integer>(ret);
+    }
+
+    private void dfs(List<Integer>[] graph, int u, int parent, int[] low, int[] disc, Set<Integer> ret) {
+        low[u] = disc[u] = ++time;
+        
+        // Count of children in DFS Tree 
+        int children = 0; 
+        
+        // visit all the neighbors of node u
+        for(int v: graph[u]) {
+            if (v==parent) continue;
+            else if (disc[v]==-1) {
+                children++;
+                dfs(graph, v, u, low, disc, ret);
+                low[u] = Math.min(low[u], low[v]);
+                
+                //In DFS tree, a vertex u is articulation point if
+                //1) u is root of DFS tree and it has at least two children.
+                //or 2) u is not root of DFS tree and it has a child v such that 
+                //no vertex in v's subtree has a back edge to one of the ancestors (in DFS tree) of u.
+                if(parent==-1&&children>1 || parent!=-1&&low[v]>=disc[u])
+                    ret.add(u);
+            }
+            else {
+                //when node v is not the parent node of u in the DFS tree and has been visited
+                //this occurs when edge(u,v) is a backwards edge 
+                //(edges of G that don't belong to the DFS tree) in the DFS tree
+                low[u] = Math.min(low[u], disc[v]);
+            }                   
+        }
+    }
+ ```
+
+### 33. Search Suggestions System lc1268
+ - [link](https://leetcode.com/problems/critical-connections-in-a-network/)
+ - medium
+
 
 
 lc93
