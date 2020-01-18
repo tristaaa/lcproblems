@@ -36,7 +36,7 @@ class Solution(object):
                 if v==parent: continue
                 elif disc[v]==-1:
                     dfs(v,u)
-                    print("aa",u,v)
+                    # print("aa",u,v)
                     low[u] = min(low[u],low[v])
 
                     # when the lowest node id of v's DFS subtree is larger than the node id of u
@@ -53,14 +53,14 @@ class Solution(object):
                 # this occurs when edge(u,v) is a backwards edge (edges of G that don't belong to the DFS tree)
                 # in the DFS tree
                 else:
-                    print("bb",u,v)
+                    # print("bb",u,v)
                     low[u]=min(low[u],disc[v])
 
         for i in range(1,n+1):
             if disc[i]==-1:
                 # actually this will be called only once, since the inner loop will visit all nodes
                 dfs(i,-1)
-
+        print(low)
         return [cc for cc in ret if cc!=0]
 
 
@@ -81,4 +81,10 @@ print(" / \\    |   |")
 print("2 - 3 - 6 - 9")
 print("    |")
 print("    4 - 5")
+print("\n the critical connections(bridges) are these edges(sorted in incresing id): ",sol.criticalConnections(n,connections))
+
+n = 7
+connections = [[1, 2], [1, 3], [2, 4], [3, 4], [3, 6], [4, 5], [6, 7]]
+print("Given an undirected connected graph with %d vertexes, and with edges: %s, the graph is shown below" %(n,connections))
+
 print("\n the critical connections(bridges) are these edges(sorted in incresing id): ",sol.criticalConnections(n,connections))
