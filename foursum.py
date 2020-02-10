@@ -41,16 +41,16 @@ class Solution:
                         high-=1
                     else:
                         results.append(result+[nums[low],nums[high]])
+                        while low<high and nums[low]==nums[low+1]:
+                            low+=1
+                        while low<high and nums[high]==nums[high-1]:
+                            high-=1
                         low+=1
                         high-=1
-                        while low<high and nums[low]==nums[low-1]:
-                            low+=1
-                        while low<high and nums[high]==nums[high+1]:
-                            high-=1
             else: # recursive
                 for i in range(low, high+1):
-                    if i==low or (i>low and nums[i]!=nums[i-1]):
-                        findNSum(i+1, high, target-nums[i], N-1, result+[nums[i]], results)
+                    # if i==low or (i>low and nums[i]!=nums[i-1]):
+                    findNSum(i+1, high, target-nums[i], N-1, result+[nums[i]], results)
 
 
         nums.sort()
