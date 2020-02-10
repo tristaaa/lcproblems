@@ -58,15 +58,11 @@ def insertionSort(arr):
     for i in range(1,len(arr)):
         if arr[i]<arr[i-1]:
             extractedNum = arr[i]
-            for j in range(i-1,-1,-1):
-                if arr[j] > extractedNum:
-                    arr[j+1] = arr[j]
-                else: break
-            if j>0:
-                arr[j+1] = extractedNum
-            else:
-                arr[j] = extractedNum
-    # return arr
+            j=i
+            while j>0 and arr[j-1] > extractedNum:
+                arr[j] = arr[j-1]
+                j-=1
+            arr[j] = extractedNum
 
 
 def mergeSort(arr):
@@ -125,10 +121,51 @@ def quickSort(arr,low,high):
                 # pointer `lo` points to a number>=pivot, so need to exchange them
                 array[lo],array[hi] = array[hi],array[lo]
         array[low],array[lo] = array[lo],array[low]
-        quicksort(array,low,lo)
-        quicksort(array,lo+1,high)
+        quickSort(array,low,lo)
+        quickSort(array,lo+1,high)
 
         return array
+
+def quickSort1(arr,low,high):
+    ''' 
+        time complexity: O(NlogN), worst time complexity: O(N^2), space complexity: O(logN), unstable
+
+        divide and conquer. 
+        recursively partition the array, making the left part to the pivot less than it 
+        and the right part to the pivot greater than it
+    '''
+    def partition(arr,low,high):
+        pivot = arr[low]
+        lo,hi=low,high
+        while lo<hi:
+            while lo<hi and arr[hi]>=pivot:
+                hi-=1
+            while lo<hi and arr[lo]<=pivot:
+                lo+=1
+            if lo<hi: 
+                # in this case, the pointer `hi` points to a number<pivot and 
+                # pointer `lo` points to a number>pivot, so need to exchange them
+                arr[lo],arr[hi] = arr[hi],arr[lo]
+        arr[high],arr[lo] = arr[lo],arr[high]
+        return lo
+
+    def partition2(arr,low,high):
+        pivot = arr[high]
+        lo=low-1
+        for hi in range(low,high):
+            if arr[hi]<=pivot:
+                lo+=1
+                arr[lo],arr[hi]=arr[hi],arr[lo]
+        lo+=1
+        arr[lo],arr[high]=arr[high],arr[lo]
+        return lo
+
+    if low<high:
+        lo = partition(arr,low,high)
+        # print(lo,arr)
+        quickSort1(arr,low,lo-1)
+        quickSort1(arr,lo+1,high)
+
 
 def quickSort2(arr):
     ''' 
@@ -179,7 +216,6 @@ def heapSort(arr):
         arr[i],arr[0] = arr[0],arr[i]
         maxHeapify(arr,0,i-1)
 
-    return arr
 
 
 def shellSort(arr):
@@ -202,7 +238,7 @@ def shellSort(arr):
                     j-=gap
                 arr[j] = temp
         gap//=2
-    return arr
+    # return arr
 
 
 def countSort(arr):
@@ -222,7 +258,7 @@ def countSort(arr):
     # method 1
     idx=0
     for j in range(K):
-        while cnt[j]>1:
+        while cnt[j]>0:
             arr[idx]=j+minv
             idx+=1
             cnt[j]-=1
@@ -248,16 +284,14 @@ def radixSort(arr,radix=10):
             then keep placing the numbers into buckets by higher digit, and put them back to arr
     """
     import math
-    maxv=max(arr)
     hidigit = int(math.log(max(arr), radix))+1
-    buckets = [[] for i in range(radix)]
-    for i in range(1,hidigit+1):
+    for i in range(hidigit):
+        buckets = [[] for i in range(radix)]
         for num in arr:
-            buckets[num%(radix**i) // (radix**(i-1))].append(num)
+            buckets[num%(radix**(i+1)) // (radix**i)].append(num)
         del arr[:] # clear the arr, then arr will be empty
         for buk in buckets:
             arr.extend(buk)
-        buckets = [[] for i in range(radix)]
 
 
 
@@ -280,7 +314,7 @@ while 1:
         li = mergeSort(li)
         print("  after:",li)
     elif alg==5:
-        sli = quickSort(li,0,len(li)-1)
+        quickSort1(li,0,len(li)-1)
         print("  after:",li)
     elif alg==6:
         heapSort(li)
