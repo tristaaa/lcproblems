@@ -39,7 +39,6 @@ def countSongComb(k,a,x,b,y):
 
 
 
-
     # space efficient dp
     # like 01 knapsack
     # dp[i] means the number of different combination of the song list with length i
@@ -51,11 +50,11 @@ def countSongComb(k,a,x,b,y):
     MOD=1000000007
     for i in range(x):
         for j in range(k,a-1,-1):
-            dp[i]=(dp[i]+dp[i-a])%MOD
+            dp[j]=(dp[j]+dp[j-a])%MOD
 
     for i in range(y):
         for j in range(k,b-1,-1):
-            dp[i]=(dp[i]+dp[i-b])%MOD
+            dp[j]=(dp[j]+dp[j-b])%MOD
 
     return dp[k]%MOD
 
