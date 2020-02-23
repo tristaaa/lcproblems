@@ -99,7 +99,7 @@ def mergeSort(arr):
     return merge(leftarr,rightarr)
 
 
-def quickSort(arr,low,high):
+def quickSort(array,low,high):
     ''' 
         time complexity: O(NlogN), worst time complexity: O(N^2), space complexity: O(logN), unstable
 
@@ -146,7 +146,7 @@ def quickSort1(arr,low,high):
                 # in this case, the pointer `hi` points to a number<pivot and 
                 # pointer `lo` points to a number>pivot, so need to exchange them
                 arr[lo],arr[hi] = arr[hi],arr[lo]
-        arr[high],arr[lo] = arr[lo],arr[high]
+        arr[low],arr[lo] = arr[lo],arr[low]
         return lo
 
     def partition2(arr,low,high):
